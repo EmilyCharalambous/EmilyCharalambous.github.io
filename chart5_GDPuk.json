@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "GDP in the UK",
+    "data": {
+      "values": [
+       
+        {"Year": "2017 Q1", "GDP": 537114},
+        {"Year": "2017 Q2", "GDP": 539994},
+        {"Year": "2017 Q3", "GDP": 542780},
+        {"Year": "2017 Q4", "GDP": 546185},
+        {"Year": "2018 Q1", "GDP": 547003},
+        {"Year": "2018 Q2", "GDP": 549491},
+        {"Year": "2018 Q3", "GDP": 552545},
+        {"Year": "2018 Q4", "GDP": 553966},
+        {"Year": "2019 Q1", "GDP": 557458},
+        {"Year": "2019 Q2", "GDP": 558071},
+        {"Year": "2019 Q3", "GDP": 561480},
+        {"Year": "2019 Q4", "GDP": 561339},
+        {"Year": "2020 Q1", "GDP": 546515},
+        {"Year": "2020 Q2", "GDP": 431794},
+        {"Year": "2020 Q3", "GDP": 503509},
+        {"Year": "2020 Q4", "GDP": 509621},
+        {"Year": "2021 Q1", "GDP": 503663},
+        {"Year": "2021 Q2", "GDP": 536608},
+        {"Year": "2021 Q3", "GDP": 546084},
+        {"Year": "2021 Q4", "GDP": 554938},
+        {"Year": "2022 Q1", "GDP": 558776},
+        {"Year": "2022 Q2", "GDP": 560089}
+      ]
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": "Year", "type": "ordinal"},
+      "y": {"field": "GDP", "type": "quantitative"}
+    },
+    "config": {}
+  }
