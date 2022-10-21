@@ -1,0 +1,31 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Population Growth (UK) ",
+      "subtitle": "Annual % growth of UK population",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/UK_Population_Growth.csv"
+    },
+    "height": 300,
+    "width": 260,
+    "mark": {"type": "bar", "color": "#050a9dbf"},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {"title": null, "grid": false, "ticks": false, "labelAngle": 45}
+      },
+      "y": {
+        "field": "Population Growth (%)",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      }
+    },
+    "config": {}
+  }
