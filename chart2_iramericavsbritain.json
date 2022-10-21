@@ -7,11 +7,11 @@
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
-    "color": "#cbc7cf",
-    "subtitleColor":"#cbc7cf"},
+    "color": "#000000",
+    "subtitleColor":"#000000"},
   
     "config": {
-    "background":"#122b39",
+    "background":"#ffffff",
     "view": {"stroke": "transparent"}},
     
       "data": {
@@ -64,7 +64,7 @@
             "title": null,
             "axis": {
             "grid": false,
-            "labelColor":"#cbc7cf"}},
+            "labelColor":"#000000"}},
     
             "y": {
             "field": {"repeat": "layer"},               
@@ -72,7 +72,7 @@
             "title":null,
             "axis": {
                 "grid": false,
-                "labelColor":"#cbc7cf"}},
+                "labelColor":"#000000"}},
     
             "color": {
                 "datum": {"repeat": "layer"},
@@ -80,9 +80,9 @@
                 "legend":{
                   "labelExpr": "{'us10y': 'US', 'y10': 'UK', 'german10y':'Germany'}[datum.label]",
                   "orient": "top-right",
-                  "labelColor":"#cbc7cf",
+                  "labelColor":"#000000",
                   "title":"Country",
-                  "titleColor":"#cbc7cf"}
+                  "titleColor":"#000000"}
                 } 
             }
           }

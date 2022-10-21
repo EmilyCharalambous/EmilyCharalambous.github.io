@@ -28,7 +28,7 @@
         {"Year": "2022 Q2", "GDP": 560089}
       ]
     },
-    "mark": "bar",
+    "mark": {"type": "bar", "color": "#3e56db"},
     "encoding": {
       "x": {"field": "Year", "type": "ordinal"},
       "y": {"field": "GDP", "type": "quantitative"}

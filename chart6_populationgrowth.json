@@ -13,7 +13,7 @@
     },
     "height": 300,
     "width": 260,
-    "mark": {"type": "bar", "color": "#050a9dbf"},
+    "mark": {"type": "bar", "color": "#3e56db"},
     "encoding": {
       "x": {
         "field": "Year",
