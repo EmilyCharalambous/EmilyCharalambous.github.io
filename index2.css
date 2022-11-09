@@ -12,7 +12,7 @@
 /* Book on colour = Joseph Albers - Interaction of Colour */
 
 body{
-    background-color: rgb(46, 36, 155);
+    background-color: rgb(255, 246, 252);
  }
 
 
@@ -26,7 +26,7 @@ h1, h3, p{
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: rgb(255, 250, 240);
+    background-color: rgb(255, 255, 255);
 
       
     border-width: 6px;
