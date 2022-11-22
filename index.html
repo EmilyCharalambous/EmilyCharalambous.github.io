@@ -4,6 +4,20 @@
 
 
 <head>
+
+    <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +28,15 @@
     <!-- Link to my style sheet -->
     <link rel="stylesheet" href="index2.css">
 
+    <button type= "button"> Portofolio </button>
+    <button type= "button"> Project </button>
+
     <!--The next three lines allow the Vega embed-->
     <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+
 </head>
 
 
@@ -103,7 +122,9 @@
     vegaEmbed('#Chart13', myChart13);
     vegaEmbed('#Chart14', myChart14);
     vegaEmbed('#Chart15', myChart15);
+
+   
+
 </script>
 
 </html>
-

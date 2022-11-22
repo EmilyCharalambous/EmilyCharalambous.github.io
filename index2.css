@@ -4,31 +4,47 @@
 
 
 /* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
 
 
 /* Set the background color for my page: */
 
 /* Book on colour = Joseph Albers - Interaction of Colour */
 
-body{
-    background-color: rgb(255, 246, 252);
- }
+body {
+    background: linear-gradient(-45deg, #483f3c, #41245a, #0f4356, #195a74);
+    background-size: 100%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
     color:rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
     
 .myWeek1{
     margin: auto;
     max-width: 700px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
 
-      
     border-width: 6px;
     border-style: solid;
     border-radius: 10px;
@@ -38,7 +54,7 @@ h1, h3, p{
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 320px;
     border-width: 5px;
     border-style: round;
@@ -46,4 +62,3 @@ h1, h3, p{
     border-color: rgb(7, 3, 40);
     
 }
-
