@@ -1,0 +1,40 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "Annual Inflation Rate %",
+      "subtitle": "UK and Global Inflation Rate %",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/UK_GLOBAL_INFLATION_1.csv",
+      "format": {"type": "csv"}
+    },
+    "height": 300,
+    "width": 300,
+    "mark": {"type": "line", "point": true},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "ordinal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "Inflation ",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "areaName",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": null,
+        "legend": {"orient": "top-right"}
+      }
+    },
+    "config": {}
+  }
