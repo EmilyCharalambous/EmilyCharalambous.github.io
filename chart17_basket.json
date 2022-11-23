@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Basket_of_goods_and_Services_2021.csv"
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Basket_of_goods_and_Services_2021%20(1).csv"
     },
     "mark": "bar",
     "width": 250,
@@ -24,12 +24,12 @@
         "type": "ordinal",
         "title": null
       },
-      "x": {"field": "CPIH weight (%)", "title": null, "type": "quantitative"},
+      "x": {"field": "CPIH", "title": null, "type": "quantitative"},
       "fillOpacity": {
         "condition": {"param": "highlight", "value": 1},
         "value": 0.6
       },
-      "tooltip": [{"field": "CPIH weight (%)", "title": "CPIH weight (%)"}],
+      "tooltip": [{"field": "CPIH", "title": "CPIH weight (%)"}],
       "color": {
         "field": "Price variation",
         "type": "ordinal",
