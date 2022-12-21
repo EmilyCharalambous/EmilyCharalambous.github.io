@@ -1,25 +1,25 @@
-﻿Country,Current_Account_to_GDP,GDP_Growth,GDP_per_capita
-Singapore,18.1,4.1,66176
-Switzerland,9.3,0.5,88224
-Netherlands,9,3.1,48424
-Germany,7.4,1.3,42527
-Russia,6.8,-3.7,10220
-Saudi Arabia,6.6,8.8,19018
-South Korea,4.9,3.1,32645
-Japan,4,1.5,35278
-South Africa,3.7,4.1,5865
-Euro Area,2.5,2.3,36352
-Italy,2.5,2.6,31512
-China,1.8,3.9,11188
-Argentina,1,5.9,12391
-Spain,0.9,3.8,26239
-France,0.4,1,38210
-Indonesia,0.3,5.72,3856
-Canada,0.1,3.9,43946
-Australia,-0.4,5.9,58780
-Mexico,-0.4,4.3,9255
-India,-1.2,6.3,1961
-Turkey,-1.7,3.9,13251
-Brazil,-1.8,3.6,8551
-United Kingdom,-2,2.4,46209
-United States,-3.6,1.9,61280
+﻿Country,Exports ,Imports,Current Account
+Argentina,7089,5750,-3031
+Australia,60066,47850,-2278
+Brazil,28164,21489,-4625
+Canada,67040,65820,-11101
+China,296,226,1440
+Euro Area,252778,279297,-4.39
+France,51445,63595,-3800
+Germany,133334,128030,5896
+India,31.99,51.88,-23872
+Indonesia,24121,18962,4376
+Italy,54488,56611,710
+Japan,8838,10865,-64.1
+Mexico,49275,61820,-5505
+Netherlands,65830,24754,7488
+Russia,45927,24754,51900
+Saudi Arabia,124661,60047,45365
+Singapore,52967,49496,30378
+South Africa,159609,163923,-18071
+South Korea,51910,58925,880
+Spain,33057790,39910245,361
+Switzerland,20916,20422,11091
+Turkey,21900,30700,-359
+United Kingdom,69060,70845,-33768
+United States,256631,334793,-251090
