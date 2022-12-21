@@ -1,25 +1,24 @@
-﻿Country,Exports,Imports,GDP(USD_Billion)
-Argentina,7089,5750,491
-Australia,60066,47850,1543
-Brazil,28164,21489,1609
-Canada,67040,65820,1991
-China,296,226,17734
-Euro Area,252778,279297,14493
-France,51445,63595,2937
-Germany,133334,128030,4223
-India,31.99,51.88,3173
-Indonesia,24121,18962,1186
-Italy,54488,56611,2100
-Japan,8838,10865,4937
-Mexico,49275,61820,1293
-Netherlands,65830,24754,1018
-Russia,45927,24754,1776
-Saudi Arabia,124661,60047,834
-Singapore,52967,49496,397
-South Africa,159609,163923,420
-South Korea,51910,58925,1799
-Spain,33057790,39910245,1425
-Switzerland,20916,20422,813
-Turkey,21900,30700,815
-United Kingdom,69060,70845,3187
-United States,256631,334793,22996
+﻿Country,Corruption_Index,Competitiveness_Index,Full_Year_GDP_Growth
+Singapore,85,84.78,7.61
+Switzerland,84,82.33,4.22
+Netherlands,82,82.39,5
+Germany,80,81.8,2.6
+United Kingdom,78,81.2,7.4
+Canada,74,79.59,4.54
+Australia,73,78.75,3.62
+Japan,73,82.27,1.7
+France,71,78.81,6.8
+United States,67,83.67,5.9
+South Korea,62,79.62,4.02
+Spain,61,75.28,5.5
+Italy,56,71.53,6.6
+Saudi Arabia,53,70.03,3.24
+China,45,73.9,8.1
+South Africa,44,62.44,4.91
+India,40,61.36,8.7
+Argentina,38,57.2,10.3
+Brazil,38,60.93,4.6
+Indonesia,38,64.63,3.69
+Turkey,38,62.14,11.4
+Mexico,31,64.95,4.8
+Russia,29,66.74,4.7
