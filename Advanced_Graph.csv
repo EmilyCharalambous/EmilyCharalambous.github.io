@@ -1,24 +1,24 @@
-﻿Country,Corruption_Index,Competitiveness_Index,Full_Year_GDP_Growth
-Singapore,85,84.78,7.61
-Switzerland,84,82.33,4.22
-Netherlands,82,82.39,5
-Germany,80,81.8,2.6
-United Kingdom,78,81.2,7.4
-Canada,74,79.59,4.54
-Australia,73,78.75,3.62
-Japan,73,82.27,1.7
-France,71,78.81,6.8
-United States,67,83.67,5.9
-South Korea,62,79.62,4.02
-Spain,61,75.28,5.5
-Italy,56,71.53,6.6
-Saudi Arabia,53,70.03,3.24
-China,45,73.9,8.1
-South Africa,44,62.44,4.91
-India,40,61.36,8.7
-Argentina,38,57.2,10.3
-Brazil,38,60.93,4.6
-Indonesia,38,64.63,3.69
-Turkey,38,62.14,11.4
-Mexico,31,64.95,4.8
-Russia,29,66.74,4.7
+﻿Country,Competitiveness_Index,Full_Year_GDP_Growth,Government_debt_to_GDP
+Singapore,84.78,7.61,160
+Switzerland,82.33,4.22,41.4
+Netherlands,82.39,5,52.4
+Germany,81.8,2.6,69.3
+United Kingdom,81.2,7.4,97.4
+Canada,79.59,4.54,113
+Australia,78.75,3.62,36.1
+Japan,82.27,1.7,262
+France,78.81,6.8,113
+United States,83.67,5.9,137
+South Korea,79.62,4.02,46.9
+Spain,75.28,5.5,118
+Italy,71.53,6.6,151
+Saudi Arabia,70.03,3.24,30
+China,73.9,8.1,71.5
+South Africa,62.44,4.91,69.9
+India,61.36,8.7,89.26
+Argentina,57.2,10.3,80.5
+Brazil,60.93,4.6,80.27
+Indonesia,64.63,3.69,41.2
+Turkey,62.14,11.4,42
+Mexico,64.95,4.8,49.6
+Russia,66.74,4.7,18.2
