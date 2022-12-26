@@ -1,13 +1,37 @@
-﻿Category,Owner_Occupier,Private_Renter,Subsidised_Renter
-Education,8,14,3
-Health,23,12,15
-Communication,26,24,28
-Furniture Household Equipment and Maintenance,58,32,45
-Clothing and Footwear,55,46,48
-Alcoholic Beverages and Tobacco,38,42,64
-Miscellaneous Goods and Services,111,89,77
-Restaurants and Hotels,109,92,77
-Transport,134,106,82
-Recreation & Culture,131,86,100
-Food and Non-Alcoholic Beverages,121,100,152
-Housing Water Elelctricity Gas and Other Fuels,186,358,309
+﻿Category,Expenditure_Share,Type_of_buyers
+Education,8,Owner_Occupier
+Health,23,Owner_Occupier
+Communication,26,Owner_Occupier
+Furniture Household Equipment and Maintenance,58,Owner_Occupier
+Clothing and Footwear,55,Owner_Occupier
+Alcoholic Beverages and Tobacco,38,Owner_Occupier
+Miscellaneous Goods and Services,111,Owner_Occupier
+Restaurants and Hotels,109,Owner_Occupier
+Transport,134,Owner_Occupier
+Recreation & Culture,131,Owner_Occupier
+Food and Non-Alcoholic Beverages,121,Owner_Occupier
+Housing Water Elelctricity Gas and Other Fuels,186,Owner_Occupier
+Education,14,Private_Renter
+Health,12,Private_Renter
+Communication,24,Private_Renter
+Furniture Household Equipment and Maintenance,32,Private_Renter
+Clothing and Footwear,46,Private_Renter
+Alcoholic Beverages and Tobacco,42,Private_Renter
+Miscellaneous Goods and Services,89,Private_Renter
+Restaurants and Hotels,92,Private_Renter
+Transport,106,Private_Renter
+Recreation & Culture,86,Private_Renter
+Food and Non-Alcoholic Beverages,100,Private_Renter
+Housing Water Elelctricity Gas and Other Fuels,358,Private_Renter
+Education,3,Subsidised_Renter
+Health,15,Subsidised_Renter
+Communication,28,Subsidised_Renter
+Furniture Household Equipment and Maintenance,45,Subsidised_Renter
+Clothing and Footwear,48,Subsidised_Renter
+Alcoholic Beverages and Tobacco,64,Subsidised_Renter
+Miscellaneous Goods and Services,77,Subsidised_Renter
+Restaurants and Hotels,77,Subsidised_Renter
+Transport,82,Subsidised_Renter
+Recreation & Culture,100,Subsidised_Renter
+Food and Non-Alcoholic Beverages,152,Subsidised_Renter
+Housing Water Elelctricity Gas and Other Fuels,309,Subsidised_Renter
