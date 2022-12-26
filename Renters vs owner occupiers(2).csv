@@ -1,0 +1,37 @@
+﻿Category,Expenditure_Share,Type_of_buyers
+Education,8,Owner Occupier
+Health,23,Owner Occupier
+Communication,26,Owner Occupier
+Household Equipment & Maintenance,58,Owner Occupier
+Clothing and Footwear,55,Owner Occupier
+Alcoholic Beverages and Tobacco,38,Owner Occupier
+Miscellaneous Goods and Services,111,Owner Occupier
+Restaurants and Hotels,109,Owner Occupier
+Transport,134,Owner Occupier
+Recreation & Culture,131,Owner Occupier
+Food and Non-Alcoholic Beverages,121,Owner Occupier
+"Housing, utilities and other fuels",186,Owner Occupier
+Education,14,Private Renter
+Health,12,Private Renter
+Communication,24,Private Renter
+Household Equipment & Maintenance,32,Private Renter
+Clothing and Footwear,46,Private Renter
+Alcoholic Beverages and Tobacco,42,Private Renter
+Miscellaneous Goods and Services,89,Private Renter
+Restaurants and Hotels,92,Private Renter
+Transport,106,Private Renter
+Recreation & Culture,86,Private Renter
+Food and Non-Alcoholic Beverages,100,Private Renter
+"Housing, utilities and other fuels",358,Private Renter
+Education,3,Subsidised Renter
+Health,15,Subsidised Renter
+Communication,28,Subsidised Renter
+Household Equipment & Maintenance,45,Subsidised Renter
+Clothing and Footwear,48,Subsidised Renter
+Alcoholic Beverages and Tobacco,64,Subsidised Renter
+Miscellaneous Goods and Services,77,Subsidised Renter
+Restaurants and Hotels,77,Subsidised Renter
+Transport,82,Subsidised Renter
+Recreation & Culture,100,Subsidised Renter
+Food and Non-Alcoholic Beverages,152,Subsidised Renter
+"Housing, utilities and other fuels",309,Subsidised Renter
