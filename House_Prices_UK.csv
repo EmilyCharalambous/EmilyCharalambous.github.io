@@ -1,0 +1,857 @@
+﻿Date,House_Prices,areaName
+Jan-05,158572,England
+Feb-05,158609,England
+Mar-05,159642,England
+Apr-05,161336,England
+May-05,163064,England
+Jun-05,164069,England
+Jul-05,165756,England
+Aug-05,166440,England
+Sep-05,166168,England
+Oct-05,165637,England
+Nov-05,166303,England
+Dec-05,167244,England
+Jan-06,166544,England
+Feb-06,166896,England
+Mar-06,168001,England
+Apr-06,171129,England
+May-06,172699,England
+Jun-06,174231,England
+Jul-06,176164,England
+Aug-06,177603,England
+Sep-06,178275,England
+Oct-06,178927,England
+Nov-06,179718,England
+Dec-06,182031,England
+Jan-07,181824,England
+Feb-07,182397,England
+Mar-07,183712,England
+Apr-07,186711,England
+May-07,188814,England
+Jun-07,190822,England
+Jul-07,193360,England
+Aug-07,194328,England
+Sep-07,194764,England
+Oct-07,194700,England
+Nov-07,194502,England
+Dec-07,194373,England
+Jan-08,191750,England
+Feb-08,190066,England
+Mar-08,188657,England
+Apr-08,189115,England
+May-08,189777,England
+Jun-08,187350,England
+Jul-08,185844,England
+Aug-08,181494,England
+Sep-08,177232,England
+Oct-08,173249,England
+Nov-08,168230,England
+Dec-08,165795,England
+Jan-09,162673,England
+Feb-09,160956,England
+Mar-09,159340,England
+Apr-09,160701,England
+May-09,162740,England
+Jun-09,164536,England
+Jul-09,167673,England
+Aug-09,169603,England
+Sep-09,171214,England
+Oct-09,172314,England
+Nov-09,172818,England
+Dec-09,174136,England
+Jan-10,174458,England
+Feb-10,175248,England
+Mar-10,174765,England
+Apr-10,176796,England
+May-10,177754,England
+Jun-10,178655,England
+Jul-10,180519,England
+Aug-10,180807,England
+Sep-10,180231,England
+Oct-10,178102,England
+Nov-10,176301,England
+Dec-10,176036,England
+Jan-11,174442,England
+Feb-11,173811,England
+Mar-11,173046,England
+Apr-11,175490,England
+May-11,174668,England
+Jun-11,174838,England
+Jul-11,177164,England
+Aug-11,177335,England
+Sep-11,176783,England
+Oct-11,175171,England
+Nov-11,175200,England
+Dec-11,174812,England
+Jan-12,174179,England
+Feb-12,174161,England
+Mar-12,174323,England
+Apr-12,176543,England
+May-12,177026,England
+Jun-12,178696,England
+Jul-12,179756,England
+Aug-12,180129,England
+Sep-12,179563,England
+Oct-12,178412,England
+Nov-12,178662,England
+Dec-12,178406,England
+Jan-13,176816,England
+Feb-13,177203,England
+Mar-13,178189,England
+Apr-13,179900,England
+May-13,180621,England
+Jun-13,182088,England
+Jul-13,184274,England
+Aug-13,185642,England
+Sep-13,186082,England
+Oct-13,185358,England
+Nov-13,186260,England
+Dec-13,188544,England
+Jan-14,188265,England
+Feb-14,189347,England
+Mar-14,190037,England
+Apr-14,194251,England
+May-14,196171,England
+Jun-14,197951,England
+Jul-14,200825,England
+Aug-14,203406,England
+Sep-14,203639,England
+Oct-14,203311,England
+Nov-14,202704,England
+Dec-14,203346,England
+Jan-15,202856,England
+Feb-15,203424,England
+Mar-15,203360,England
+Apr-15,205936,England
+May-15,208265,England
+Jun-15,209874,England
+Jul-15,213518,England
+Aug-15,215756,England
+Sep-15,216350,England
+Oct-15,216676,England
+Nov-15,218500,England
+Dec-15,219582,England
+Jan-16,220361,England
+Feb-16,220627,England
+Mar-16,222663,England
+Apr-16,223784,England
+May-16,226370,England
+Jun-16,228430,England
+Jul-16,230868,England
+Aug-16,231176,England
+Sep-16,230848,England
+Oct-16,229944,England
+Nov-16,231053,England
+Dec-16,231922,England
+Jan-17,231593,England
+Feb-17,232696,England
+Mar-17,231760,England
+Apr-17,235021,England
+May-17,236727,England
+Jun-17,238595,England
+Jul-17,241406,England
+Aug-17,242628,England
+Sep-17,242041,England
+Oct-17,242003,England
+Nov-17,241086,England
+Dec-17,242378,England
+Jan-18,241061,England
+Feb-18,241989,England
+Mar-18,240428,England
+Apr-18,242396,England
+May-18,243445,England
+Jun-18,244962,England
+Jul-18,247981,England
+Aug-18,248620,England
+Sep-18,248248,England
+Oct-18,247757,England
+Nov-18,246940,England
+Dec-18,246380,England
+Jan-19,244641,England
+Feb-19,244427,England
+Mar-19,242982,England
+Apr-19,244662,England
+May-19,244928,England
+Jun-19,245846,England
+Jul-19,248468,England
+Aug-19,249221,England
+Sep-19,249637,England
+Oct-19,248842,England
+Nov-19,247867,England
+Dec-19,248097,England
+Jan-20,247898,England
+Feb-20,246739,England
+Mar-20,249121,England
+Apr-20,246424,England
+May-20,247499,England
+Jun-20,250739,England
+Jul-20,253226,England
+Aug-20,255802,England
+Sep-20,258155,England
+Oct-20,259592,England
+Nov-20,262409,England
+Dec-20,264971,England
+Jan-21,266588,England
+Feb-21,267192,England
+Mar-21,270627,England
+Apr-21,267500,England
+May-21,267295,England
+Jun-21,284252,England
+Jul-21,267745,England
+Aug-21,276457,England
+Sep-21,286832,England
+Oct-21,279281,England
+Nov-21,284326,England
+Dec-21,286235,England
+Jan-22,290724,England
+Feb-22,292005,England
+Mar-22,293721,England
+Apr-22,295928,England
+May-22,299851,England
+Jun-22,302869,England
+Jul-22,309139,England
+Aug-22,313526,England
+Sep-22,315355,England
+Oct-22,316073,England
+Jan-05,123815,Wales 
+Feb-05,121070,Wales 
+Mar-05,123052,Wales 
+Apr-05,124088,Wales 
+May-05,126541,Wales 
+Jun-05,127477,Wales 
+Jul-05,130529,Wales 
+Aug-05,131874,Wales 
+Sep-05,131307,Wales 
+Oct-05,131511,Wales 
+Nov-05,130826,Wales 
+Dec-05,129673,Wales 
+Jan-06,129914,Wales 
+Feb-06,132218,Wales 
+Mar-06,133581,Wales 
+Apr-06,134018,Wales 
+May-06,135043,Wales 
+Jun-06,138538,Wales 
+Jul-06,138355,Wales 
+Aug-06,140227,Wales 
+Sep-06,140180,Wales 
+Oct-06,139801,Wales 
+Nov-06,141553,Wales 
+Dec-06,142521,Wales 
+Jan-07,139760,Wales 
+Feb-07,143455,Wales 
+Mar-07,141453,Wales 
+Apr-07,144844,Wales 
+May-07,145951,Wales 
+Jun-07,147402,Wales 
+Jul-07,147245,Wales 
+Aug-07,150316,Wales 
+Sep-07,149164,Wales 
+Oct-07,149825,Wales 
+Nov-07,148509,Wales 
+Dec-07,147362,Wales 
+Jan-08,146364,Wales 
+Feb-08,144636,Wales 
+Mar-08,141503,Wales 
+Apr-08,141804,Wales 
+May-08,142749,Wales 
+Jun-08,141876,Wales 
+Jul-08,137901,Wales 
+Aug-08,139660,Wales 
+Sep-08,132625,Wales 
+Oct-08,133991,Wales 
+Nov-08,131304,Wales 
+Dec-08,129403,Wales 
+Jan-09,125021,Wales 
+Feb-09,124029,Wales 
+Mar-09,123104,Wales 
+Apr-09,125355,Wales 
+May-09,127350,Wales 
+Jun-09,125948,Wales 
+Jul-09,128279,Wales 
+Aug-09,128768,Wales 
+Sep-09,129232,Wales 
+Oct-09,130696,Wales 
+Nov-09,131131,Wales 
+Dec-09,132978,Wales 
+Jan-10,127733,Wales 
+Feb-10,127958,Wales 
+Mar-10,130677,Wales 
+Apr-10,131747,Wales 
+May-10,132483,Wales 
+Jun-10,131877,Wales 
+Jul-10,134036,Wales 
+Aug-10,132453,Wales 
+Sep-10,133167,Wales 
+Oct-10,133140,Wales 
+Nov-10,127443,Wales 
+Dec-10,128963,Wales 
+Jan-11,127771,Wales 
+Feb-11,127961,Wales 
+Mar-11,125133,Wales 
+Apr-11,129222,Wales 
+May-11,128085,Wales 
+Jun-11,128270,Wales 
+Jul-11,128564,Wales 
+Aug-11,129395,Wales 
+Sep-11,131017,Wales 
+Oct-11,127698,Wales 
+Nov-11,130415,Wales 
+Dec-11,127397,Wales 
+Jan-12,127097,Wales 
+Feb-12,126324,Wales 
+Mar-12,126231,Wales 
+Apr-12,128163,Wales 
+May-12,128349,Wales 
+Jun-12,129986,Wales 
+Jul-12,129342,Wales 
+Aug-12,128860,Wales 
+Sep-12,127952,Wales 
+Oct-12,126881,Wales 
+Nov-12,128452,Wales 
+Dec-12,127143,Wales 
+Jan-13,127584,Wales 
+Feb-13,125702,Wales 
+Mar-13,126975,Wales 
+Apr-13,126671,Wales 
+May-13,128640,Wales 
+Jun-13,129380,Wales 
+Jul-13,128501,Wales 
+Aug-13,130842,Wales 
+Sep-13,130085,Wales 
+Oct-13,128089,Wales 
+Nov-13,130029,Wales 
+Dec-13,128581,Wales 
+Jan-14,131603,Wales 
+Feb-14,132349,Wales 
+Mar-14,130464,Wales 
+Apr-14,132656,Wales 
+May-14,135527,Wales 
+Jun-14,135019,Wales 
+Jul-14,135571,Wales 
+Aug-14,136710,Wales 
+Sep-14,138218,Wales 
+Oct-14,136630,Wales 
+Nov-14,136898,Wales 
+Dec-14,136904,Wales 
+Jan-15,136148,Wales 
+Feb-15,135611,Wales 
+Mar-15,135231,Wales 
+Apr-15,137039,Wales 
+May-15,137553,Wales 
+Jun-15,138478,Wales 
+Jul-15,139213,Wales 
+Aug-15,140651,Wales 
+Sep-15,140248,Wales 
+Oct-15,140912,Wales 
+Nov-15,140974,Wales 
+Dec-15,141520,Wales 
+Jan-16,140015,Wales 
+Feb-16,142712,Wales 
+Mar-16,141617,Wales 
+Apr-16,141925,Wales 
+May-16,144296,Wales 
+Jun-16,146447,Wales 
+Jul-16,146353,Wales 
+Aug-16,145384,Wales 
+Sep-16,144976,Wales 
+Oct-16,146658,Wales 
+Nov-16,146278,Wales 
+Dec-16,146442,Wales 
+Jan-17,146395,Wales 
+Feb-17,145837,Wales 
+Mar-17,147794,Wales 
+Apr-17,149900,Wales 
+May-17,147428,Wales 
+Jun-17,150394,Wales 
+Jul-17,151028,Wales 
+Aug-17,152859,Wales 
+Sep-17,153227,Wales 
+Oct-17,155033,Wales 
+Nov-17,153109,Wales 
+Dec-17,153791,Wales 
+Jan-18,153128,Wales 
+Feb-18,153210,Wales 
+Mar-18,154022,Wales 
+Apr-18,153574,Wales 
+May-18,154756,Wales 
+Jun-18,156864,Wales 
+Jul-18,158626,Wales 
+Aug-18,161024,Wales 
+Sep-18,160265,Wales 
+Oct-18,160955,Wales 
+Nov-18,160158,Wales 
+Dec-18,162234,Wales 
+Jan-19,158548,Wales 
+Feb-19,159018,Wales 
+Mar-19,159904,Wales 
+Apr-19,161456,Wales 
+May-19,161628,Wales 
+Jun-19,162908,Wales 
+Jul-19,164440,Wales 
+Aug-19,168215,Wales 
+Sep-19,164414,Wales 
+Oct-19,166281,Wales 
+Nov-19,168516,Wales 
+Dec-19,166433,Wales 
+Jan-20,163205,Wales 
+Feb-20,165953,Wales 
+Mar-20,167040,Wales 
+Apr-20,160039,Wales 
+May-20,162701,Wales 
+Jun-20,167384,Wales 
+Jul-20,168416,Wales 
+Aug-20,172999,Wales 
+Sep-20,170030,Wales 
+Oct-20,175948,Wales 
+Nov-20,178255,Wales 
+Dec-20,181274,Wales 
+Jan-21,181118,Wales 
+Feb-21,179554,Wales 
+Mar-21,184807,Wales 
+Apr-21,182377,Wales 
+May-21,185654,Wales 
+Jun-21,196221,Wales 
+Jul-21,187050,Wales 
+Aug-21,192019,Wales 
+Sep-21,198146,Wales 
+Oct-21,200151,Wales 
+Nov-21,199411,Wales 
+Dec-21,202180,Wales 
+Jan-22,205571,Wales 
+Feb-22,203226,Wales 
+Mar-22,205461,Wales 
+Apr-22,209872,Wales 
+May-22,211409,Wales 
+Jun-22,213777,Wales 
+Jul-22,218087,Wales 
+Aug-22,219467,Wales 
+Sep-22,223708,Wales 
+Oct-22,223824,Wales 
+Jan-05,93982,Scotland 
+Feb-05,93554,Scotland 
+Mar-05,96638,Scotland 
+Apr-05,102739,Scotland 
+May-05,103815,Scotland 
+Jun-05,107989,Scotland 
+Jul-05,110003,Scotland 
+Aug-05,110101,Scotland 
+Sep-05,110188,Scotland 
+Oct-05,109598,Scotland 
+Nov-05,108994,Scotland 
+Dec-05,110714,Scotland 
+Jan-06,109380,Scotland 
+Feb-06,107355,Scotland 
+Mar-06,111484,Scotland 
+Apr-06,116209,Scotland 
+May-06,118876,Scotland 
+Jun-06,120454,Scotland 
+Jul-06,122702,Scotland 
+Aug-06,124427,Scotland 
+Sep-06,126392,Scotland 
+Oct-06,123482,Scotland 
+Nov-06,125396,Scotland 
+Dec-06,127707,Scotland 
+Jan-07,126699,Scotland 
+Feb-07,124280,Scotland 
+Mar-07,129092,Scotland 
+Apr-07,135581,Scotland 
+May-07,138765,Scotland 
+Jun-07,141897,Scotland 
+Jul-07,141815,Scotland 
+Aug-07,143287,Scotland 
+Sep-07,142294,Scotland 
+Oct-07,139547,Scotland 
+Nov-07,141524,Scotland 
+Dec-07,139736,Scotland 
+Jan-08,138388,Scotland 
+Feb-08,137508,Scotland 
+Mar-08,137848,Scotland 
+Apr-08,139328,Scotland 
+May-08,145641,Scotland 
+Jun-08,141555,Scotland 
+Jul-08,139710,Scotland 
+Aug-08,137784,Scotland 
+Sep-08,132420,Scotland 
+Oct-08,133839,Scotland 
+Nov-08,129820,Scotland 
+Dec-08,125767,Scotland 
+Jan-09,124484,Scotland 
+Feb-09,120994,Scotland 
+Mar-09,125727,Scotland 
+Apr-09,126975,Scotland 
+May-09,130699,Scotland 
+Jun-09,132049,Scotland 
+Jul-09,133126,Scotland 
+Aug-09,132658,Scotland 
+Sep-09,131727,Scotland 
+Oct-09,132914,Scotland 
+Nov-09,134183,Scotland 
+Dec-09,133037,Scotland 
+Jan-10,128973,Scotland 
+Feb-10,126524,Scotland 
+Mar-10,128897,Scotland 
+Apr-10,133162,Scotland 
+May-10,132977,Scotland 
+Jun-10,134249,Scotland 
+Jul-10,135444,Scotland 
+Aug-10,133825,Scotland 
+Sep-10,133756,Scotland 
+Oct-10,133750,Scotland 
+Nov-10,131509,Scotland 
+Dec-10,129758,Scotland 
+Jan-11,129746,Scotland 
+Feb-11,125916,Scotland 
+Mar-11,126172,Scotland 
+Apr-11,129848,Scotland 
+May-11,129832,Scotland 
+Jun-11,131209,Scotland 
+Jul-11,133429,Scotland 
+Aug-11,132518,Scotland 
+Sep-11,131949,Scotland 
+Oct-11,129122,Scotland 
+Nov-11,128206,Scotland 
+Dec-11,125924,Scotland 
+Jan-12,125728,Scotland 
+Feb-12,121886,Scotland 
+Mar-12,125412,Scotland 
+Apr-12,125134,Scotland 
+May-12,126455,Scotland 
+Jun-12,128361,Scotland 
+Jul-12,127491,Scotland 
+Aug-12,126734,Scotland 
+Sep-12,125823,Scotland 
+Oct-12,124617,Scotland 
+Nov-12,123166,Scotland 
+Dec-12,122180,Scotland 
+Jan-13,122594,Scotland 
+Feb-13,120180,Scotland 
+Mar-13,121357,Scotland 
+Apr-13,123409,Scotland 
+May-13,125358,Scotland 
+Jun-13,127118,Scotland 
+Jul-13,128421,Scotland 
+Aug-13,129781,Scotland 
+Sep-13,127777,Scotland 
+Oct-13,127413,Scotland 
+Nov-13,128629,Scotland 
+Dec-13,127018,Scotland 
+Jan-14,127007,Scotland 
+Feb-14,125034,Scotland 
+Mar-14,126650,Scotland 
+Apr-14,129596,Scotland 
+May-14,131677,Scotland 
+Jun-14,133444,Scotland 
+Jul-14,135161,Scotland 
+Aug-14,135575,Scotland 
+Sep-14,134807,Scotland 
+Oct-14,135016,Scotland 
+Nov-14,133334,Scotland 
+Dec-14,132669,Scotland 
+Jan-15,134956,Scotland 
+Feb-15,132572,Scotland 
+Mar-15,139792,Scotland 
+Apr-15,134030,Scotland 
+May-15,135678,Scotland 
+Jun-15,136923,Scotland 
+Jul-15,139051,Scotland 
+Aug-15,138564,Scotland 
+Sep-15,138246,Scotland 
+Oct-15,137660,Scotland 
+Nov-15,138475,Scotland 
+Dec-15,136702,Scotland 
+Jan-16,136790,Scotland 
+Feb-16,134625,Scotland 
+Mar-16,136243,Scotland 
+Apr-16,136446,Scotland 
+May-16,138256,Scotland 
+Jun-16,140234,Scotland 
+Jul-16,142294,Scotland 
+Aug-16,140881,Scotland 
+Sep-16,140533,Scotland 
+Oct-16,139631,Scotland 
+Nov-16,140852,Scotland 
+Dec-16,138206,Scotland 
+Jan-17,138356,Scotland 
+Feb-17,136011,Scotland 
+Mar-17,136891,Scotland 
+Apr-17,141091,Scotland 
+May-17,142070,Scotland 
+Jun-17,143634,Scotland 
+Jul-17,147566,Scotland 
+Aug-17,147234,Scotland 
+Sep-17,144530,Scotland 
+Oct-17,145058,Scotland 
+Nov-17,146350,Scotland 
+Dec-17,145235,Scotland 
+Jan-18,146889,Scotland 
+Feb-18,145982,Scotland 
+Mar-18,144655,Scotland 
+Apr-18,148427,Scotland 
+May-18,148621,Scotland 
+Jun-18,149960,Scotland 
+Jul-18,151777,Scotland 
+Aug-18,152138,Scotland 
+Sep-18,151446,Scotland 
+Oct-18,151528,Scotland 
+Nov-18,149556,Scotland 
+Dec-18,148269,Scotland 
+Jan-19,149769,Scotland 
+Feb-19,146892,Scotland 
+Mar-19,149625,Scotland 
+Apr-19,150794,Scotland 
+May-19,151417,Scotland 
+Jun-19,152680,Scotland 
+Jul-19,154776,Scotland 
+Aug-19,154195,Scotland 
+Sep-19,154874,Scotland 
+Oct-19,153953,Scotland 
+Nov-19,152528,Scotland 
+Dec-19,150287,Scotland 
+Jan-20,153518,Scotland 
+Feb-20,149582,Scotland 
+Mar-20,150625,Scotland 
+Apr-20,151779,Scotland 
+May-20,152914,Scotland 
+Jun-20,155329,Scotland 
+Jul-20,154582,Scotland 
+Aug-20,154707,Scotland 
+Sep-20,160585,Scotland 
+Oct-20,163019,Scotland 
+Nov-20,164032,Scotland 
+Dec-20,162375,Scotland 
+Jan-21,164940,Scotland 
+Feb-21,161847,Scotland 
+Mar-21,167913,Scotland 
+Apr-21,161814,Scotland 
+May-21,168589,Scotland 
+Jun-21,172341,Scotland 
+Jul-21,175659,Scotland 
+Aug-21,178076,Scotland 
+Sep-21,178865,Scotland 
+Oct-21,179557,Scotland 
+Nov-21,181503,Scotland 
+Dec-21,177243,Scotland 
+Jan-22,183445,Scotland 
+Feb-22,179490,Scotland 
+Mar-22,180964,Scotland 
+Apr-22,184109,Scotland 
+May-22,186967,Scotland 
+Jun-22,190668,Scotland 
+Jul-22,193090,Scotland 
+Aug-22,193708,Scotland 
+Sep-22,192804,Scotland 
+Oct-22,194874,Scotland 
+Jan-05,111920,Northern Ireland
+Feb-05,111920,Northern Ireland
+Mar-05,111920,Northern Ireland
+Apr-05,116004,Northern Ireland
+May-05,116004,Northern Ireland
+Jun-05,116004,Northern Ireland
+Jul-05,123386,Northern Ireland
+Aug-05,123386,Northern Ireland
+Sep-05,123386,Northern Ireland
+Oct-05,127674,Northern Ireland
+Nov-05,127674,Northern Ireland
+Dec-05,127674,Northern Ireland
+Jan-06,131302,Northern Ireland
+Feb-06,131302,Northern Ireland
+Mar-06,131302,Northern Ireland
+Apr-06,143918,Northern Ireland
+May-06,143918,Northern Ireland
+Jun-06,143918,Northern Ireland
+Jul-06,160529,Northern Ireland
+Aug-06,160529,Northern Ireland
+Sep-06,160529,Northern Ireland
+Oct-06,179841,Northern Ireland
+Nov-06,179841,Northern Ireland
+Dec-06,179841,Northern Ireland
+Jan-07,198950,Northern Ireland
+Feb-07,198950,Northern Ireland
+Mar-07,198950,Northern Ireland
+Apr-07,216751,Northern Ireland
+May-07,216751,Northern Ireland
+Jun-07,216751,Northern Ireland
+Jul-07,224670,Northern Ireland
+Aug-07,224670,Northern Ireland
+Sep-07,224670,Northern Ireland
+Oct-07,214269,Northern Ireland
+Nov-07,214269,Northern Ireland
+Dec-07,214269,Northern Ireland
+Jan-08,198362,Northern Ireland
+Feb-08,198362,Northern Ireland
+Mar-08,198362,Northern Ireland
+Apr-08,185845,Northern Ireland
+May-08,185845,Northern Ireland
+Jun-08,185845,Northern Ireland
+Jul-08,168076,Northern Ireland
+Aug-08,168076,Northern Ireland
+Sep-08,168076,Northern Ireland
+Oct-08,153774,Northern Ireland
+Nov-08,153774,Northern Ireland
+Dec-08,153774,Northern Ireland
+Jan-09,140190,Northern Ireland
+Feb-09,140190,Northern Ireland
+Mar-09,140190,Northern Ireland
+Apr-09,141489,Northern Ireland
+May-09,141489,Northern Ireland
+Jun-09,141489,Northern Ireland
+Jul-09,141864,Northern Ireland
+Aug-09,141864,Northern Ireland
+Sep-09,141864,Northern Ireland
+Oct-09,141994,Northern Ireland
+Nov-09,141994,Northern Ireland
+Dec-09,141994,Northern Ireland
+Jan-10,135701,Northern Ireland
+Feb-10,135701,Northern Ireland
+Mar-10,135701,Northern Ireland
+Apr-10,134515,Northern Ireland
+May-10,134515,Northern Ireland
+Jun-10,134515,Northern Ireland
+Jul-10,132164,Northern Ireland
+Aug-10,132164,Northern Ireland
+Sep-10,132164,Northern Ireland
+Oct-10,124515,Northern Ireland
+Nov-10,124515,Northern Ireland
+Dec-10,124515,Northern Ireland
+Jan-11,119024,Northern Ireland
+Feb-11,119024,Northern Ireland
+Mar-11,119024,Northern Ireland
+Apr-11,117142,Northern Ireland
+May-11,117142,Northern Ireland
+Jun-11,117142,Northern Ireland
+Jul-11,115108,Northern Ireland
+Aug-11,115108,Northern Ireland
+Sep-11,115108,Northern Ireland
+Oct-11,111871,Northern Ireland
+Nov-11,111871,Northern Ireland
+Dec-11,111871,Northern Ireland
+Jan-12,104712,Northern Ireland
+Feb-12,104712,Northern Ireland
+Mar-12,104712,Northern Ireland
+Apr-12,104987,Northern Ireland
+May-12,104987,Northern Ireland
+Jun-12,104987,Northern Ireland
+Jul-12,102086,Northern Ireland
+Aug-12,102086,Northern Ireland
+Sep-12,102086,Northern Ireland
+Oct-12,99647,Northern Ireland
+Nov-12,99647,Northern Ireland
+Dec-12,99647,Northern Ireland
+Jan-13,97428,Northern Ireland
+Feb-13,97428,Northern Ireland
+Mar-13,97428,Northern Ireland
+Apr-13,99229,Northern Ireland
+May-13,99229,Northern Ireland
+Jun-13,99229,Northern Ireland
+Jul-13,101165,Northern Ireland
+Aug-13,101165,Northern Ireland
+Sep-13,101165,Northern Ireland
+Oct-13,101879,Northern Ireland
+Nov-13,101879,Northern Ireland
+Dec-13,101879,Northern Ireland
+Jan-14,103570,Northern Ireland
+Feb-14,103570,Northern Ireland
+Mar-14,103570,Northern Ireland
+Apr-14,107031,Northern Ireland
+May-14,107031,Northern Ireland
+Jun-14,107031,Northern Ireland
+Jul-14,109116,Northern Ireland
+Aug-14,109116,Northern Ireland
+Sep-14,109116,Northern Ireland
+Oct-14,110750,Northern Ireland
+Nov-14,110750,Northern Ireland
+Dec-14,110750,Northern Ireland
+Jan-15,110940,Northern Ireland
+Feb-15,110940,Northern Ireland
+Mar-15,110940,Northern Ireland
+Apr-15,114340,Northern Ireland
+May-15,114340,Northern Ireland
+Jun-15,114340,Northern Ireland
+Jul-15,117716,Northern Ireland
+Aug-15,117716,Northern Ireland
+Sep-15,117716,Northern Ireland
+Oct-15,118756,Northern Ireland
+Nov-15,118756,Northern Ireland
+Dec-15,118756,Northern Ireland
+Jan-16,118851,Northern Ireland
+Feb-16,118851,Northern Ireland
+Mar-16,118851,Northern Ireland
+Apr-16,123249,Northern Ireland
+May-16,123249,Northern Ireland
+Jun-16,123249,Northern Ireland
+Jul-16,124730,Northern Ireland
+Aug-16,124731,Northern Ireland
+Sep-16,124731,Northern Ireland
+Oct-16,125059,Northern Ireland
+Nov-16,125059,Northern Ireland
+Dec-16,125059,Northern Ireland
+Jan-17,124786,Northern Ireland
+Feb-17,124786,Northern Ireland
+Mar-17,124786,Northern Ireland
+Apr-17,127178,Northern Ireland
+May-17,127178,Northern Ireland
+Jun-17,127178,Northern Ireland
+Jul-17,128878,Northern Ireland
+Aug-17,128878,Northern Ireland
+Sep-17,128878,Northern Ireland
+Oct-17,129601,Northern Ireland
+Nov-17,129601,Northern Ireland
+Dec-17,129601,Northern Ireland
+Jan-18,130292,Northern Ireland
+Feb-18,130292,Northern Ireland
+Mar-18,130292,Northern Ireland
+Apr-18,132095,Northern Ireland
+May-18,132095,Northern Ireland
+Jun-18,132095,Northern Ireland
+Jul-18,134619,Northern Ireland
+Aug-18,134619,Northern Ireland
+Sep-18,134619,Northern Ireland
+Oct-18,136764,Northern Ireland
+Nov-18,136764,Northern Ireland
+Dec-18,136764,Northern Ireland
+Jan-19,135434,Northern Ireland
+Feb-19,135434,Northern Ireland
+Mar-19,135434,Northern Ireland
+Apr-19,136960,Northern Ireland
+May-19,136960,Northern Ireland
+Jun-19,136960,Northern Ireland
+Jul-19,139838,Northern Ireland
+Aug-19,139838,Northern Ireland
+Sep-19,139838,Northern Ireland
+Oct-19,140141,Northern Ireland
+Nov-19,140141,Northern Ireland
+Dec-19,140141,Northern Ireland
+Jan-20,140722,Northern Ireland
+Feb-20,140722,Northern Ireland
+Mar-20,140722,Northern Ireland
+Apr-20,140841,Northern Ireland
+May-20,140841,Northern Ireland
+Jun-20,140841,Northern Ireland
+Jul-20,143723,Northern Ireland
+Aug-20,143723,Northern Ireland
+Sep-20,143723,Northern Ireland
+Oct-20,147475,Northern Ireland
+Nov-20,147475,Northern Ireland
+Dec-20,147475,Northern Ireland
+Jan-21,149084,Northern Ireland
+Feb-21,149084,Northern Ireland
+Mar-21,149084,Northern Ireland
+Apr-21,154323,Northern Ireland
+May-21,154323,Northern Ireland
+Jun-21,154323,Northern Ireland
+Jul-21,159098,Northern Ireland
+Aug-21,159098,Northern Ireland
+Sep-21,159098,Northern Ireland
+Oct-21,159073,Northern Ireland
+Nov-21,159073,Northern Ireland
+Dec-21,159073,Northern Ireland
+Jan-22,163877,Northern Ireland
+Feb-22,163877,Northern Ireland
+Mar-22,163877,Northern Ireland
+Apr-22,169152,Northern Ireland
+May-22,169152,Northern Ireland
+Jun-22,169152,Northern Ireland
+Jul-22,176131,Northern Ireland
+Aug-22,176131,Northern Ireland
+Sep-22,176131,Northern Ireland
+Oct-22,176131,Northern Ireland
