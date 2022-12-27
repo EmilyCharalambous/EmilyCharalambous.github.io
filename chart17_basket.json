@@ -1,41 +1,41 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Basket_of_goods_and_Services_2021%20(1).csv"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Basket_of_goods_and_Services_2021%20(1).csv"
+  },
+  "mark": "bar",
+  "width": 250,
+  "height": 300,
+  "title": {
+    "text": "Basket for Goods and Services (UK)",
+    "subtitle": " Allocation of items to Consumer Prices Index including owner occupiers’ housing costs (CPIH) divisions in 2021",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "params": [
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+  ],
+  "encoding": {
+    "y": {
+      "field": "Basket of Goods and Services",
+      "sort": "-x",
+      "type": "ordinal",
+      "title": null
     },
-    "mark": "bar",
-    "width": 250,
-    "height": 300,
-    "title": {
-      "text": "Basket for Goods and Services (UK)",
-      "subtitle": " Allocation of items to Consumer Prices Index including owner occupiers’ housing costs (CPIH) divisions in 2021",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
+    "x": {"field": "CPIH", "title": null, "type": "quantitative"},
+    "fillOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.6
     },
-    "params": [
-      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
-    ],
-    "encoding": {
-      "y": {
-        "field": "Basket of Goods and Services",
-        "sort": "-x",
-        "type": "ordinal",
-        "title": null
-      },
-      "x": {"field": "CPIH", "title": null, "type": "quantitative"},
-      "fillOpacity": {
-        "condition": {"param": "highlight", "value": 1},
-        "value": 0.6
-      },
-      "tooltip": [{"field": "CPIH", "title": "CPIH weight (%)"}],
-      "color": {
-        "field": "Price variation",
-        "type": "ordinal",
-        "legend": {"orient": "bottom-right"},
-        "scale": {"domain": ["Low", "Medium"], "scheme": "yellowgreenblue"}
-      }
-    },
-    "config": {}
-  }
+    "tooltip": [{"field": "CPIH", "title": "CPIH weight (%)"}],
+    "color": {
+      "field": "Price variation",
+      "type": "ordinal",
+      "legend": {"orient": "bottom-right"},
+      "scale": {"domain": ["Low", "Medium"], "scheme": "yellowgreenblue"}
+    }
+  },
+  "config": {}
+}

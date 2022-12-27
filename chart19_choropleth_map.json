@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 400,
+    "height": 300,
+    
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Luxembourg_final_map.geojson",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "identity", "reflectY": true},
+    "mark": {"type": "geoshape", "strokeWidth": 0.5},
+    "encoding": {
+      "color": {"field": "Population", "type": "quantitative"},
+      "tooltip": [
+        {"field": "properties.name", "title": "City/Commune"},
+        {"field": "Population", "title": "Population"}
+      ]
+    },
+    "config": {},
+    "transform": [
+      {
+        "lookup": "properties.name",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Population_of_Communes(5).csv"
+          },
+          "key": "name",
+          "fields": ["Population"]
+        }
+      }
+    ]
+  }

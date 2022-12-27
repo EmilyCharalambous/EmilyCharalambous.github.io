@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 400,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Luxembourg_final_map.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "identity", "reflectY": true},
+  "mark": {
+    "type": "geoshape",
+    "fill": "black",
+    "stroke": "white",
+    "strokeWidth": 0.5
+  },
+  "encoding": {"tooltip": {"field": "properties.name"}},
+  "config": {}
+}

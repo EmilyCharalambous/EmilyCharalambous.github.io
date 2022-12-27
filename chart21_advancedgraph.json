@@ -1,0 +1,101 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Exploring the Labor Market Data",
+    "subtitle": [
+      "Long Term Unemployment Rate (x), Employment Rate (y) - 2022 Data",
+      "Each dot includes the number of Job Vacancies for each country"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Advanced%20chart%20(2).csv"
+  },
+  "selection": {
+    "paintbrush": {
+      "type": "multi",
+      "on": "mouseover",
+      "nearest": true
+    },
+    "grid": {
+      "type": "interval",
+      "bind": "scales"
+    },
+    "divisionSelect": {
+      "type": "multi",
+      "fields": [
+        "division_sh"
+      ],
+      "bind": "legend"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Long_term_unemployment",
+      "type": "quantitative",
+      "title": "Long Term Unemployment Rate (%)"
+    },
+    "y": {
+      "field": "Employment_Rate",
+      "type": "quantitative",
+      "title": "Employment Rate (%)"
+    },
+    "color": {
+      "field": "Country",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "scheme": "turbo"
+      }
+    },
+    "opacity": {
+      "condition": {
+        "selection": "divisionSelect",
+        "value": 0.9
+      },
+      "value": 0
+    },
+    "size": {
+      "condition": {
+        "selection": "paintbrush",
+        "value": 850
+      },
+      "field": "Job_Vacancies",
+      "type": "quantitative",
+      "legend": null
+    },
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+      {
+        "field": "Long_term_unemployment",
+        "type": "quantitative",
+        "title": "Unemployment Rate (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "Employment_Rate",
+        "type": "quantitative",
+        "title": "Employment Rate (%)",
+        "format": ".2f"
+      },
+      {
+        "field": "Job_Vacancies",
+        "type": "quantitative",
+        "title": "Job Vacancies",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {}
+}
