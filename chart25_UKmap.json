@@ -1,0 +1,36 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 300,
+    "title": "Life Satisfaction in the UK",
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/UK_Map.geojson",
+      "format": {"property": "features"}
+    },
+    "projection": {"type": "identity", "reflectY": true},
+    "mark": {"type": "geoshape", "strokeWidth": 0.5},
+    "encoding": {
+      "color": {
+        "field": "Happiness",
+        "type": "quantitative",
+        "title": "Life Satisfaction"
+      },
+      "tooltip": [
+        {"field": "properties.Name", "title": "Country"},
+        {"field": "Happiness", "title": "Life Satisfaction"}
+      ]
+    },
+    "config": {},
+    "transform": [
+      {
+        "lookup": "properties.Name",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Life_Satisfaction(1).csv"
+          },
+          "key": "Name",
+          "fields": ["Happiness"]
+        }
+      }
+    ]
+  }

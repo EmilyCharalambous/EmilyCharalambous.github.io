@@ -1,141 +1,67 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<!-- Korina Mavrokordatou, Data Science 2021 -->
+
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
 
 <head>
 
-    <!-- START ANALYTICS -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- This stuff provided by Google from the Admin page of Analysics account -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      <link rel="stylesheet" href="homepage.css">
 
-    gtag('config', 'G-JP82FVH378');
-    </script>
-    <!-- END ANALYTICS -->
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Title for the page -->
-    <title>Document</title>
+      <meta charset="utf-8">
 
-    <!-- Link to my style sheet -->
-    <link rel="stylesheet" href="index2.css">
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=FreeMono&display=swap');
+        </style>
 
-    <button type= "button"> Portofolio </button>
-    <button type= "button"> Project </button>
-
-    <!--The next three lines allow the Vega embed-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
 </head>
 
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
 
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
 
 <body>
-    <!-- A div that contains a group of items for week 1. Can be useful for setting background colours etc.  -->
-    <div class="myWeek1">
-        <h1>Data Science for Economists.</h1>
 
-        <h3>Week 1 </h3>
-        <h3>Interest Rates </h3>
-        <p>The first chart tracks the household interest rate in the UK.</p>
-        <div class="chart" id="Chart1"></div>
+    <title>Emily Charalambous - Home</title>
 
-        <h3>Borrowing costs</h3>
-        <p>My second chart compares the borrowing costs in the UK to those in America.</p>
-        <div class="chart" id="Chart2"> </div>
-        
-        <h3>Week 2 </h3>
-        <h3>IMF lending outstanding in $ billions </h3>
-        <div class="chart" id="Chart3"></div>
-        
-        <h3>IMF lending outstanding as a % of World GDP</h3>
-        <div class="chart" id="Chart4"></div>
 
-        <h3>Week 3</h3>
-        <h3>Total GDP in the UK</h3>
-        <p>This graph shows the total GDP in the UK between 2017-2022.</p>
-        <div class="chart" id="Chart5"></div>
-      
-        <h3>Week 4</h3>
-        <h3>Population Growth in the UK (Annual %)</h3>
-        <p>This graph shows the annual percentage growth in the UK from 1961-2021. I chose to extract data from the World Bank website as it is a reliable source, updated with the latest trends.  </p>
-        <div class="chart" id="Chart6"></div>
-      
-        <h3>Week 5</h3>
-        <h3>Workforce by Industry (UK)</h3>
-        <div class="chart" id="Chart7"></div>
-        <div class="chart" id="Chart8"></div>
-        <div class="chart" id="Chart9"></div>
-        <div class="chart" id="Chart10"></div>
-        <div class="chart" id="Chart11"></div>
-        <div class="chart" id="Chart12"></div>
-        <div class="chart" id="Chart13"></div>
-        <div class="chart" id="Chart14"></div>
-        <div class="chart" id="Chart15"></div>
+    <br>
+    <br> 
+    <br> 
 
-        <h3>Week 8</h3>
-        <h3>UK vs Global Inflation Rate</h3>
-        <div class="chart" id="Chart16"></div>
-        <h3>Basket of Goods and Services (UK)</h3>
-        <p> The following graph shows how inflation affects prices of goods and services differently</p>
-        <div class="chart" id="Chart17"></div>
+<h1> <strong> Emily Charalambous </strong></h1>
 
-    </div> 
+
+<br>
+<br>
+
+
+<h3><strong>ECON30006 | Student Number: 2040875</strong></h3>
+
+
+<br>
+<br>
+<br>
+<br> 
+
+
+<div class="buttonDiv1">    
+    <button class="button1" onclick="window.location.href = 'portfolio.html'" ><b>Portfolio</b></button>
+</div>  <div class="buttonDiv2">    
+    <button class="button2" onclick="window.location.href = 'project.html'" ><b>Project</b></button>
+</div>
+<div class="buttonDiv3">    
+    <button class="button3" onclick="window.location.href= 'https://github.com/EmilyCharalambous/EmilyCharalambous.github.io'" ><b>Github</b></button>
+</div>
 
 
 </body>
-
-
-<script>
-    //Define charts:
-    var myChart1 =  "chart1_hhinterestrates.json";
-    var myChart2 =  "chart2_iramericavsbritain.json";
-    var myChart3 =  "chart3_IMFoustandinglending.json";
-    var myChart4 =  "chart4_IMFoutstandingpercentage.json";
-    var myChart5 =  "chart5_GDPuk.json";
-    var myChart6 =  "chart6_populationgrowth.json";
-    var myChart7 =  "chart7_ons.json";
-    var myChart8 =  "chart8_ons.json";
-    var myChart9 =  "chart9_ons.json";
-    var myChart10 = "chart10_ons.json";
-    var myChart11 = "chart11_ons.json";
-    var myChart12 = "chart12_ons.json";
-    var myChart13 = "chart13_ons.json";
-    var myChart14 = "chart14_ons.json";
-    var myChart15 = "chart15_ons.json";
-    var myChart16 = "chart16_inflation.json";
-    var myChart17 = "chart17_basket.json";
-    
-    // Embed charts:
-    vegaEmbed('#Chart1', myChart1);
-    vegaEmbed('#Chart2', myChart2);
-    vegaEmbed('#Chart3', myChart3);
-    vegaEmbed('#Chart4', myChart4);
-    vegaEmbed('#Chart5', myChart5);
-    vegaEmbed('#Chart6', myChart6);
-    vegaEmbed('#Chart7', myChart7);
-    vegaEmbed('#Chart8', myChart8);
-    vegaEmbed('#Chart9', myChart9);
-    vegaEmbed('#Chart10', myChart10);
-    vegaEmbed('#Chart11', myChart11);
-    vegaEmbed('#Chart12', myChart12);
-    vegaEmbed('#Chart13', myChart13);
-    vegaEmbed('#Chart14', myChart14);
-    vegaEmbed('#Chart15', myChart15);
-    vegaEmbed('#Chart16', myChart16);
-    vegaEmbed('#Chart17', myChart17);
-
-</script>
-
 </html>

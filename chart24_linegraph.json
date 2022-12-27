@@ -1,0 +1,71 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+      "text": "House Prices in UK",
+      "subtitle": "New cases by publish date, rolling rate",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/House_Prices_UK.csv",
+      "format": {"type": "csv"}
+    },
+    "transform": [{"filter": "datum.symbol!=='IBM'"}],
+    "height": 300,
+    "width": 400,
+    "mark": {"type": "line", "point": false},
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": "Date",
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "House_Prices",
+        "type": "quantitative",
+        "scale": {"domain": [90000, 400000]},
+        "title": "House Prices",
+        "axis": {"grid": false}
+      },
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "areaName",
+          "type": "nominal",
+          "legend": null
+        },
+        "value": "grey"
+      },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+    },
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"symbol": "areaName"}],
+            "select": {"type": "point", "fields": ["symbol"], "on": "mouseover"}
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      },
+      {"mark": "line"},
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Date"},
+          "y": {"aggregate": {"argmax": "Date"}, "field": "House_Prices"}
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field": "areaName", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {"view": {"stroke": null}}
+  }

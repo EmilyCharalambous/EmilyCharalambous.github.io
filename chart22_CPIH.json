@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "SAS litter",
+    "title": {
+      "text": "Consumer Prices Index including owner occupiers' housing costs (CPIH)",
+      "subtitle": "As of November 2022",
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/November_2022_CPHI_Data.csv"
+    },
+    "mark": {
+      "type": "bar",
+      "color": "navy",
+      "strokeWidth": 2,
+      "opacity": 1,
+      "labellimit": 190
+    },
+    "height": 300,
+    "width": 250,
+    "params": [
+      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+    ],
+    "encoding": {
+      "y": {"field": "Category", "type": "ordinal", "sort": [], "title": null},
+      "x": {"field": "CPIH_Index", "title": "CPIH Index", "type": "quantitative"},
+      "fillOpacity": {
+        "condition": {"param": "highlight", "value": 1},
+        "value": 0.6
+      },
+      "tooltip": [{"field": "CPIH_Index", "title": "CPIH weight (%)"}]
+    },
+    "config": {}
+  }
