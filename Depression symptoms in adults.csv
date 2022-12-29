@@ -1,10 +1,10 @@
 ﻿Category,Symptoms,Range,Values
-Effect of the coronavirus (COVID-19) pandemic on their life,No or mild symptoms,Average,22
-Effect of the coronavirus (COVID-19) pandemic on their life,No or mild symptoms,LCL,20
-Effect of the coronavirus (COVID-19) pandemic on their life,No or mild symptoms,UCL,23
-Effect of the coronavirus (COVID-19) pandemic on their life,Moderate to severe symptoms,Average,39
-Effect of the coronavirus (COVID-19) pandemic on their life,Moderate to severe symptoms,LCL,34
-Effect of the coronavirus (COVID-19) pandemic on their life,Moderate to severe symptoms,UCL,45
+Impact of COVID-19,No or mild symptoms,Average,22
+Impact of COVID-19,No or mild symptoms,LCL,20
+Impact of COVID-19,No or mild symptoms,UCL,23
+Impact of COVID-19,Moderate to severe symptoms,Average,39
+Impact of COVID-19,Moderate to severe symptoms,LCL,34
+Impact of COVID-19,Moderate to severe symptoms,UCL,45
 The Environment,No or mild symptoms,Average,56
 The Environment,No or mild symptoms,LCL,54
 The Environment,No or mild symptoms,UCL,58
