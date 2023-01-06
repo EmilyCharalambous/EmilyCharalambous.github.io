@@ -1,37 +1,41 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "SAS litter",
-    "title": {
-      "text": "Consumer Prices Index including owner occupiers' housing costs (CPIH)",
-      "subtitle": "As of November 2022",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/CPIH%20Data%20Novemeber%202021-2022.csv"
+  },
+  "title": {
+    "text": "Consumer Prices Index including owner occupiers' housing costs (CPIH)",
+    "fontSize": 15,
+    "subtitle": "2021-2022 Data, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "params": [
+    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+  ],
+  "height": 300,
+  "width": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Category",
+      "axis": {"labelAngle": 30, "labelFontSize": 10, "titleFontSize": 13}
     },
-    "data": {
-      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/November_2022_CPHI_Data.csv"
+    "y": {
+      "field": "CPIH Index",
+      "title": "CPIH Index (%)",
+      "type": "quantitative",
+      "axis": {"titleFontSize": 13}
     },
-    "mark": {
-      "type": "bar",
-      "color": "navy",
-      "strokeWidth": 2,
-      "opacity": 1,
-      "labellimit": 190
+    "xOffset": {"field": "Year"},
+    "color": {"field": "Year"},
+    "fillOpacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.6
     },
-    "height": 300,
-    "width": 250,
-    "params": [
-      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
-    ],
-    "encoding": {
-      "y": {"field": "Category", "type": "ordinal", "sort": [], "title": null},
-      "x": {"field": "CPIH_Index", "title": "CPIH Index", "type": "quantitative"},
-      "fillOpacity": {
-        "condition": {"param": "highlight", "value": 1},
-        "value": 0.6
-      },
-      "tooltip": [{"field": "CPIH_Index", "title": "CPIH weight (%)"}]
-    },
-    "config": {}
-  }
+    "tooltip": [{"field": "CPIH Index", "title": "CPIH Index (%)"}]
+  },
+  "config": {}
+}

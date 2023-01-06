@@ -3,7 +3,7 @@
   "width": 500,
   "height": 300,
   "title": {
-    "text": "Happiness Index in the UK",
+    "text": "Life Satisfaction Index in the UK",
     "subtitle": "2021-2022 Data, Source: ONS",
     "fontSize": 15,
     "subtitleFontStyle": "italic",
@@ -45,9 +45,9 @@
   "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.7},
   "encoding": {
     "color": {
-      "field": "Happiness",
+      "field": "Life_Satisfaction",
       "legend": {
-        "title": "Happiness Index",
+        "title": "Life Satisfaction Index",
         "orient": "top-right",
         "direction": "horizontal",
         "labelAlign": "left"
@@ -57,7 +57,7 @@
     },
     "tooltip": [
       {"field": "properties.Name", "title": "Country"},
-      {"field": "Happiness", "title": "Happiness Index"}
+      {"field": "Life_Satisfaction", "title": "Life Satisfaction Index"}
     ]
   },
   "config": {}

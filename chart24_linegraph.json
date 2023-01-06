@@ -1,71 +1,69 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "House Prices in UK",
-      "subtitle": "New cases by publish date, rolling rate",
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "House Prices in the UK",
+    "fontSize": 15,
+    "subtitle": "2021-2022 Data, Source: ONS",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/House%20Prices%20UK%202021-2022.csv"
+  },
+  "height": 300,
+  "width": 320,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "Date",
+      "type": "ordinal",
+      "title": "Date",
+      "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13}
     },
-    "data": {
-      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/House_Prices_UK.csv",
-      "format": {"type": "csv"}
+    "y": {
+      "field": "House Prices",
+      "type": "quantitative",
+      "scale": {"domain": [125000, 350000]},
+      "title": "House Prices (£)",
+      "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13}
     },
-    "transform": [{"filter": "datum.symbol!=='IBM'"}],
-    "height": 300,
-    "width": 400,
-    "mark": {"type": "line", "point": false},
-    "encoding": {
-      "x": {
-        "field": "Date",
-        "type": "temporal",
-        "title": "Date",
-        "axis": {"grid": false}
+    "color": {
+      "condition": {
+        "param": "hover",
+        "field": "Country",
+        "type": "nominal",
+        "legend": null
       },
-      "y": {
-        "field": "House_Prices",
-        "type": "quantitative",
-        "scale": {"domain": [90000, 400000]},
-        "title": "House Prices",
-        "axis": {"grid": false}
-      },
-      "color": {
-        "condition": {
-          "param": "hover",
-          "field": "areaName",
-          "type": "nominal",
-          "legend": null
-        },
-        "value": "grey"
-      },
-      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+      "value": "grey"
     },
-    "layer": [
-      {
-        "params": [
-          {
-            "name": "hover",
-            "value": [{"symbol": "areaName"}],
-            "select": {"type": "point", "fields": ["symbol"], "on": "mouseover"}
-          }
-        ],
-        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "fields": ["Country"], "on": "mouseover"}
+        }
+      ],
+      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+    },
+    {"mark": "line"},
+    {
+      "encoding": {
+        "x": {"aggregate": "max", "field": "Date"},
+        "y": {"aggregate": {"argmax": "Date"}, "field": "House Prices"}
       },
-      {"mark": "line"},
-      {
-        "encoding": {
-          "x": {"aggregate": "max", "field": "Date"},
-          "y": {"aggregate": {"argmax": "Date"}, "field": "House_Prices"}
-        },
-        "layer": [
-          {"mark": {"type": "circle"}},
-          {
-            "mark": {"type": "text", "align": "left", "dx": 4},
-            "encoding": {"text": {"field": "areaName", "type": "nominal"}}
-          }
-        ]
-      }
-    ],
-    "config": {"view": {"stroke": null}}
-  }
+      "layer": [
+        {"mark": {"type": "circle"}},
+        {
+          "mark": {"type": "text", "align": "left", "dx": 4},
+          "encoding": {"text": {"field": "Country", "type": "nominal"}}
+        }
+      ]
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

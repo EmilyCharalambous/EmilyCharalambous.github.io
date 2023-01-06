@@ -2,18 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Renters%20vs%20owner%20occupiers(2).csv",
-    "format": {
-      "type": "csv"
-    }
+    "format": {"type": "csv"}
   },
   "title": {
     "text": "Household Costs Indices, Average Expenditure Share by Tenure Type, UK",
-    "subtitle": [
-      "From 2005 to 2021",
-      ""
-    ],
+    "fontSize": 15,
+    "subtitle": ["2021, Source: ONS"],
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 12,
     "anchor": "middle",
     "color": "black"
   },
@@ -21,29 +17,15 @@
     {
       "filter": {
         "field": "Type_of_buyers",
-        "oneOf": [
-          "Owner Occupier",
-          "Private Renter",
-          "Subsidised Renter"
-        ]
+        "oneOf": ["Owner Occupier", "Private Renter", "Subsidised Renter"]
       }
     }
   ],
-  "mark": {
-    "type": "bar",
-    "color": "#1da1f8",
-    "size": {
-      "expr": "10"
-    },
-    "opacity": 1
-  },
-  "background": "antiquewhite",
-  "height": 200,
-  "width": 200,
+  "mark": {"type": "bar", "size": {"expr": "20"}, "opacity": 1},
+  "background": "ghostwhite",
+  "height": 390,
+  "width": 300,
   "encoding": {
-    "xOffset": {
-      "field": "Type_of_buyers"
-    },
     "x": {
       "field": "Expenditure_Share",
       "type": "quantitative",
@@ -53,51 +35,18 @@
         "labelAngle": 0
       }
     },
-    "facet": {
-      "field": "Type_of_buyers",
-      "columns": 3,
-      "title": null,
-      "spacing": 40,
-      "header": {
-        "labelColor": "black",
-        "labelFontSize": 10,
-        "labelFontWeight": "bold"
-      }
-    },
     "color": {
       "field": "Type_of_buyers",
-      "scale": {
-        "range": [
-          "darkred",
-          "#929394",
-          "#82cafa",
-          "darkred",
-          "#013794"
-        ]
-      },
+      "scale": {"range": ["teal", "skyblue", "seagreen"]},
       "title": "Type of buyers"
     },
     "y": {
       "field": "Category",
       "type": "nominal",
-      "axis": {
-        "tickCount": 3,
-        "grid": true,
-        "title": null
-      },
-      "tooltip": [
-        {
-          "field": "Expenditure_Share",
-          "title": "Expenditure Share",
-          "type": "quantitative"
-        },
-        {
-          "field": "Category",
-          "title": "Category",
-          "type": "nominal"
-        }
-      ]
-    }
+      "axis": {"grid": true, "title": null},
+      "sort": "-x"
+    },
+    "tooltip": {"field": "Expenditure_Share", "type": "quantitative"}
   },
   "config": {}
 }

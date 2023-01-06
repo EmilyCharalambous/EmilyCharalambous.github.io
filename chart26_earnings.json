@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Job%20Pay%20UK.csv"
+  },
+  "title": {
+    "text": "Average Weekly Earnings Annual Growth Rates in UK",
+    "fontSize": 15,
+    "subtitle": [
+      "Total pay (including bonuses) and regular pay by public and private sector in Great Britain, seasonally adjusted, 2021 - 2022",
+      "Source: ONS"
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11
+  },
+  "height": 310,
+  "width": 300,
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "axis": {"titleFontSize": 14}},
+    "y": {
+      "field": "Value",
+      "title": "Growth Rate (%)",
+      "type": "quantitative",
+      "axis": {"titleFontSize": 14}
+    },
+    "size": {"field": "Value", "type": "quantitative"},
+    "color": {"field": "Type of pay", "type": "nominal"}
+  },
+  "layer": [
+    {"mark": "trail"},
+    {
+      "params": [
+        {
+          "name": "hover",
+          "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
+        }
+      ],
+      "mark": {"type": "trail", "tooltip": true}
+    }
+  ],
+  "config": {}
+}
