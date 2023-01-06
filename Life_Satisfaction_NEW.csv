@@ -1,9 +1,12 @@
-﻿ID,Name,Life Satisfaction,Worthwhile,Happiness,Year
-3,England,7.38,7.71,7.31,2021
-4,Scotland,7.38,7.68,7.28,2021
-1,Wales,7.37,7.69,7.31,2021
-2,Northern Ireland,7.54,7.9,7.49,2021
-3,England,7.54,7.78,7.45,2022
-4,Scotland,7.45,7.68,7.36,2022
-1,Wales,7.48,7.74,7.43,2022
-2,Northern Ireland,7.69,7.96,7.61,2022
+﻿Name,Year,Life_Satisfaction,Worthwhile,Happiness,
+England,2021,7.38,7.71,7.31,
+Scotland,2021,7.38,7.68,7.28,
+Wales,2021,7.37,7.69,7.31,
+Northern Ireland,2021,7.54,7.9,7.49,
+England,2022,7.54,7.78,7.45,
+Scotland,2022,7.45,7.68,7.36,
+Wales,2022,7.48,7.74,7.43,
+Northern Ireland,2022,7.69,7.96,7.61,
+,,,,,
+,,,,,
+,,,,,
