@@ -1,23 +1,89 @@
-﻿Date,Total pay (nominal),Regular pay (nominal),Total pay (real),Regular pay (real)
-Nov to Jan 2021,4.9,4.2,4.1,3.5
-Dec to Feb 2021,4.5,4.4,3.7,3.5
-Jan to Mar 2021,3.9,4.6,3.3,3.6
-Feb to Apr 2021,5.5,5.7,4.6,4.4
-Mar to May 2021,7.4,6.6,5.9,5
-Apr to Jun 2021,9.2,7.3,7.1,5.3
-May to Jul 2021,8.6,6.8,6.2,4.6
-Jun to Aug 2021,7.2,6,4.7,3.4
-Jul to Sept 2021,5.9,5,3.2,2.2
-Aug to Oct 2021,4.9,4.3,1.7,1
-Sept to Nov 2021,4.2,3.8,0.5,0
-Oct to Dec 2021,4.6,3.7,0.2,-0.7
-Nov to Jan 2022,4.9,3.8,0.2,-0.9
-Dec to Feb 2022,5.6,4.1,0.6,-1
-Jan to Mar 2022,7,4.2,1.4,-1.2
-Feb to Apr 2022,6.9,4.2,0.4,-2.2
-Mar to May 2022,6.4,4.4,-0.8,-2.6
-Apr to Jun 2022,5.2,4.7,-2.5,-3
-May to Jul 2022,5.5,5.2,-2.5,-2.8
-Jun to Aug 2022,6.1,5.5,-2.3,-2.8
-Jul to Sep 2022 ,6,5.8,-2.6,-2.7
-Aug to Oct 2022,6.1,6.1,-2.7,-2.7
+﻿Year,Value,Type of pay
+Nov to Jan 2021,4.9,Total pay (nominal)
+Dec to Feb 2021,4.5,Total pay (nominal)
+Jan to Mar 2021,3.9,Total pay (nominal)
+Feb to Apr 2021,5.5,Total pay (nominal)
+Mar to May 2021,7.4,Total pay (nominal)
+Apr to Jun 2021,9.2,Total pay (nominal)
+May to Jul 2021,8.6,Total pay (nominal)
+Jun to Aug 2021,7.2,Total pay (nominal)
+Jul to Sept 2021,5.9,Total pay (nominal)
+Aug to Oct 2021,4.9,Total pay (nominal)
+Sept to Nov 2021,4.2,Total pay (nominal)
+Oct to Dec 2021,4.6,Total pay (nominal)
+Nov to Jan 2022,4.9,Total pay (nominal)
+Dec to Feb 2022,5.6,Total pay (nominal)
+Jan to Mar 2022,7,Total pay (nominal)
+Feb to Apr 2022,6.9,Total pay (nominal)
+Mar to May 2022,6.4,Total pay (nominal)
+Apr to Jun 2022,5.2,Total pay (nominal)
+May to Jul 2022,5.5,Total pay (nominal)
+Jun to Aug 2022,6.1,Total pay (nominal)
+Jul to Sep 2022 ,6,Total pay (nominal)
+Aug to Oct 2022,6.1,Total pay (nominal)
+Nov to Jan 2021,4.2,Regular pay (nominal)
+Dec to Feb 2021,4.4,Regular pay (nominal)
+Jan to Mar 2021,4.6,Regular pay (nominal)
+Feb to Apr 2021,5.7,Regular pay (nominal)
+Mar to May 2021,6.6,Regular pay (nominal)
+Apr to Jun 2021,7.3,Regular pay (nominal)
+May to Jul 2021,6.8,Regular pay (nominal)
+Jun to Aug 2021,6,Regular pay (nominal)
+Jul to Sept 2021,5,Regular pay (nominal)
+Aug to Oct 2021,4.3,Regular pay (nominal)
+Sept to Nov 2021,3.8,Regular pay (nominal)
+Oct to Dec 2021,3.7,Regular pay (nominal)
+Nov to Jan 2022,3.8,Regular pay (nominal)
+Dec to Feb 2022,4.1,Regular pay (nominal)
+Jan to Mar 2022,4.2,Regular pay (nominal)
+Feb to Apr 2022,4.2,Regular pay (nominal)
+Mar to May 2022,4.4,Regular pay (nominal)
+Apr to Jun 2022,4.7,Regular pay (nominal)
+May to Jul 2022,5.2,Regular pay (nominal)
+Jun to Aug 2022,5.5,Regular pay (nominal)
+Jul to Sep 2022 ,5.8,Regular pay (nominal)
+Aug to Oct 2022,6.1,Regular pay (nominal)
+Nov to Jan 2021,4.1,Total pay (real)
+Dec to Feb 2021,3.7,Total pay (real)
+Jan to Mar 2021,3.3,Total pay (real)
+Feb to Apr 2021,4.6,Total pay (real)
+Mar to May 2021,5.9,Total pay (real)
+Apr to Jun 2021,7.1,Total pay (real)
+May to Jul 2021,6.2,Total pay (real)
+Jun to Aug 2021,4.7,Total pay (real)
+Jul to Sept 2021,3.2,Total pay (real)
+Aug to Oct 2021,1.7,Total pay (real)
+Sept to Nov 2021,0.5,Total pay (real)
+Oct to Dec 2021,0.2,Total pay (real)
+Nov to Jan 2022,0.2,Total pay (real)
+Dec to Feb 2022,0.6,Total pay (real)
+Jan to Mar 2022,1.4,Total pay (real)
+Feb to Apr 2022,0.4,Total pay (real)
+Mar to May 2022,-0.8,Total pay (real)
+Apr to Jun 2022,-2.5,Total pay (real)
+May to Jul 2022,-2.5,Total pay (real)
+Jun to Aug 2022,-2.3,Total pay (real)
+Jul to Sep 2022 ,-2.6,Total pay (real)
+Aug to Oct 2022,-2.7,Total pay (real)
+Nov to Jan 2021,3.5,Regular pay (real)
+Dec to Feb 2021,3.5,Regular pay (real)
+Jan to Mar 2021,3.6,Regular pay (real)
+Feb to Apr 2021,4.4,Regular pay (real)
+Mar to May 2021,5,Regular pay (real)
+Apr to Jun 2021,5.3,Regular pay (real)
+May to Jul 2021,4.6,Regular pay (real)
+Jun to Aug 2021,3.4,Regular pay (real)
+Jul to Sept 2021,2.2,Regular pay (real)
+Aug to Oct 2021,1,Regular pay (real)
+Sept to Nov 2021,0,Regular pay (real)
+Oct to Dec 2021,-0.7,Regular pay (real)
+Nov to Jan 2022,-0.9,Regular pay (real)
+Dec to Feb 2022,-1,Regular pay (real)
+Jan to Mar 2022,-1.2,Regular pay (real)
+Feb to Apr 2022,-2.2,Regular pay (real)
+Mar to May 2022,-2.6,Regular pay (real)
+Apr to Jun 2022,-3,Regular pay (real)
+May to Jul 2022,-2.8,Regular pay (real)
+Jun to Aug 2022,-2.8,Regular pay (real)
+Jul to Sep 2022 ,-2.7,Regular pay (real)
+Aug to Oct 2022,-2.7,Regular pay (real)
