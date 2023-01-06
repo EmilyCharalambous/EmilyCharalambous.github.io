@@ -12,10 +12,10 @@
 /* Book on colour = Joseph Albers - Interaction of Colour */
 
 body {
-    background: linear-gradient(-45deg, #483f3c, #41245a, #0f4356, #195a74);
+    background: linear-gradient(-45deg, #393232, #ffffff, #aaa2a2);
     background-size: 100%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
+    height: 850vh;
 }
 @keyframes gradient {
     0% {

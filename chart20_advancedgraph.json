@@ -1,67 +1,67 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": {
-      "text": "Competitiveness Index and GDP Annual Growth Rate in the G20",
-      "subtitle": [
-        "Competitiveness Index(x), Full Year GDP growth (y) - using 2021 data",
-        "Size of points based on the Government Debt to GDP ratio",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Competitiveness Index and GDP Annual Growth Rate in the G20",
+    "subtitle": [
+      "Competitiveness Index(x), Full Year GDP growth (y) - using 2021 data",
+      "Size of points based on the Government Debt to GDP ratio",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "transparent"}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Advanced_Graph.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "circle", "color": "firebrick", "opacity": 0.8},
+  "height": 300,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Competitiveness_Index",
+      "type": "quantitative",
+      "scale": {"domain": [57.2, 84.78]},
+      "axis": {"grid": false},
+      "title": "Competitiveness Index"
     },
-    "config": {"background": "white", "view": {"stroke": "transparent"}},
-    "data": {
-      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Advanced_Graph.csv",
-      "format": {"type": "csv"}
+    "y": {
+      "field": "Full_Year_GDP_Growth",
+      "type": "quantitative",
+      "scale": {"domain": [1.7, 11.4]},
+      "axis": {"grid": false},
+      "title": "Annual GDP Growth (%) "
     },
-    "mark": {"type": "circle", "color": "firebrick", "opacity": 0.8},
-    "height": 300,
-    "width": 300,
-    "encoding": {
-      "x": {
-        "field": "Competitiveness_Index",
-        "type": "quantitative",
-        "scale": {"domain": [57.2, 84.78]},
-        "axis": {"grid": false},
-        "title": null
-      },
-      "y": {
-        "field": "Full_Year_GDP_Growth",
-        "type": "quantitative",
-        "scale": {"domain": [1.7, 11.4]},
-        "axis": {"grid": false},
-        "title": null
-      },
-      "size": {
+    "size": {
+      "field": "Government_debt_to_GDP",
+      "type": "quantitative",
+      "title": "Prison Rate",
+      "scale": {"range": [18.2, 262]},
+      "legend": null
+    },
+    "tooltip": [
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {
         "field": "Government_debt_to_GDP",
         "type": "quantitative",
-        "title": "Prison Rate",
-        "scale": {"range": [18.2, 262]},
-        "legend": null
+        "title": "Government debt to GDP ",
+        "format": ".0f"
       },
-      "tooltip": [
-        {"field": "Country", "type": "ordinal", "title": "Country"},
-        {
-          "field": "Government_debt_to_GDP",
-          "type": "quantitative",
-          "title": "Government debt to GDP ",
-          "format": ".0f"
-        },
-        {
-          "field": "Competitiveness_Index",
-          "type": "quantitative",
-          "title": "Competitiveness Index",
-          "format": ".2f"
-        },
-        {
-          "field": "Full_Year_GDP_Growth",
-          "type": "quantitative",
-          "title": "Full Year GDP Growth (%)",
-          "format": ","
-        }
-      ]
-    }
+      {
+        "field": "Competitiveness_Index",
+        "type": "quantitative",
+        "title": "Competitiveness Index",
+        "format": ".2f"
+      },
+      {
+        "field": "Full_Year_GDP_Growth",
+        "type": "quantitative",
+        "title": "Full Year GDP Growth (%)",
+        "format": ","
+      }
+    ]
   }
+}
