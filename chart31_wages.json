@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "autosize": {"contains": "padding", "type": "fit", "resize": true},
+    "width": 700,
+    "height": 300,
+    "padding": {"left": 20, "right": 80, "bottom": 10},
+    "data": {
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Job%20Pay%20New.csv"
+    },
+    "title": {
+      "text": "Average Weekly Earnings Annual Growth Rates in UK",
+      "subtitle": [
+        "Total real pay (including bonuses) by public and private sector in Great Britain, seasonally adjusted, 2020 - 2022",
+        "Source: ONS"
+      ],
+      "fontSize": 15,
+      "subtitleFontSize": 12,
+      "subtitleFontStyle": "italic"
+    },
+    "encoding": {
+      "y": {
+        "field": "Year",
+        "type": "ordinal",
+        "sort": "-y",
+        "axis": {"titleFontSize": 13.5}
+      },
+      "x": {
+        "field": "Month",
+        "type": "ordinal",
+        "sort": null,
+        "axis": {"titleFontSize": 13}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "rect", "tooltip": true},
+        "encoding": {
+          "fill": {
+            "field": "Wage_Growth_Rate",
+            "type": "quantitative",
+            "aggregate": "sum",
+            "title": "Wage Growth Rate (%)"
+          }
+        }
+      }
+    ],
+    "config": {"view": {
+        "stroke": "transparent"}
+  }}

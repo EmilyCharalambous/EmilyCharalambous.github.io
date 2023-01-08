@@ -1,109 +1,54 @@
 {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
     "data": {
-        "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Ethnicity.csv"
-    },
-    "facet": {
-        "column": {
-            "field": "Category",
-            "title": null
-        }
+      "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Ethnicity.csv"
     },
     "title": {
-        "text": "Proportion of Adults Reporting Difficulty Affording Energy, Rent or Mortgage payments",
-        "subtitle": "June - September 2022 Data, Source: ONS",
-        "fontSize": 15,
-        "subtitleFontStyle": "italic",
-        "subtitleFontSize": 11,
-        "anchor": "start"
+      "text": "Proportion of Adults Reporting Difficulty Affording Energy, Rent or Mortgage payments",
+      "subtitle": "June - September 2022 Data, Source: ONS",
+      "fontSize": 15,
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 11,
+      "anchor": "start"
     },
+    "facet": {"field": "Category", "title": null},
     "transform": [
-        {
-            "filter": {
-                "field": "Range",
-                "oneOf": [
-                    "95% confidence interval - lower",
-                    "95% confidence interval - upper",
-                    "Average"
-                ]
-            }
-        },
-        {
-            "filter": {
-                "field": "Ethnicity",
-                "oneOf": [
-                    "White",
-                    "Mixed or Multiple ethnic groups",
-                    "Asian or Asian British",
-                    "Black or Black British",
-                    "Any other ethnic group",
-                    "Ethnic minority group"
-                ]
-            }
+      {
+        "filter": {
+          "field": "Range",
+          "oneOf": [
+            "95% confidence interval - lower",
+            "95% confidence interval - upper",
+            "Average"
+          ]
         }
+      }
     ],
     "spec": {
-        "mark": "point",
-        "encoding": {
-            "x": {
-                "field": "People",
-                "type": "quantitative",
-                "title": "Porportion (%)"
-            },
-            "y": {
-                "field": "Ethnicity",
-                "type": "ordinal",
-                "title": null
-            },
-            "color": {
-                "value": "navy",
-                "filled": true
-            },
-            "size": {
-                "value": 5
-            },
-            "opacity": {
-                "value": 1
-            }
+      "height": {"step": 42},
+      "width": 360,
+      "encoding": {
+        "x": {
+          "field": "People",
+          "type": "quantitative",
+          "title": "Porportion (%)"
         },
-        "layer": [
-            {
-                "mark": {
-                    "type": "trail",
-                    "tooltip": true
-                },
-                "encoding": {
-                    "detail": {
-                        "field": "Ethnicity",
-                        "type": "nominal"
-                    },
-                    "color": {
-                        "value": "red"
-                    },
-                    "size": {
-                        "value": 1
-                    },
-                    "opacity": {
-                        "value": 1
-                    }
-                },
-                "params": [
-                    {
-                        "name": "hover",
-                        "select": {
-                            "type": "point",
-                            "on": "mouseover",
-                            "clear": "mouseout"
-                        }
-                    }
-                ]
-            },
-            {
-                "mark": {
-                    "type": "tick",
-                    "filled": true
-                }
-            }
-        ]
+        "y": {"field": "Ethnicity", "type": "ordinal", "title": null},
+        "color": {"value": "navy"},
+        "size": {"value": 10}
+      },
+      "layer": [
+        {
+          "mark": {"type": "trail"},
+          "encoding": {
+            "detail": {"field": "Ethnicity", "type": "nominal"},
+            "color": {"value": "red"},
+            "size": {"value": 1}
+          }
+        },
+        {"mark": {"type": "tick", "tooltip": true}}
+      ]
     },
     "config": {}
-}
+  }
