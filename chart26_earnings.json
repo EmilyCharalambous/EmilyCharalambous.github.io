@@ -8,7 +8,7 @@
     "text": "Average Weekly Earnings Annual Growth Rates in UK",
     "fontSize": 15,
     "subtitle": [
-      "Total pay (including bonuses) and regular pay by public and private sector in Great Britain, seasonally adjusted, 2021 - 2022",
+      "Total pay (including bonuses) by public and private sector in Great Britain, seasonally adjusted, 2020 - 2022",
       "Source: ONS"
     ],
     "subtitleFontStyle": "italic",
@@ -17,26 +17,48 @@
   "height": 310,
   "width": 300,
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "axis": {"titleFontSize": 14}},
-    "y": {
-      "field": "Value",
-      "title": "Growth Rate (%)",
-      "type": "quantitative",
-      "axis": {"titleFontSize": 14}
+    "x": {
+      "field": "Date",
+      "type": "temporal",
+      "axis": {
+        "titleFontSize": 14
+      }
     },
-    "size": {"field": "Value", "type": "quantitative"},
-    "color": {"field": "Type of pay", "type": "nominal"}
+    "y": {
+      "field": "Wage Growth Rate (%)",
+      "type": "quantitative",
+      "axis": {
+        "titleFontSize": 14
+      }
+    },
+    "size": {
+      "field": "Wage Growth Rate (%)",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "Type of pay",
+      "type": "nominal"
+    }
   },
   "layer": [
-    {"mark": "trail"},
+    {
+      "mark": "trail"
+    },
     {
       "params": [
         {
           "name": "hover",
-          "select": {"type": "point", "on": "mouseover", "clear": "mouseout"}
+          "select": {
+            "type": "point",
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
         }
       ],
-      "mark": {"type": "trail", "tooltip": true}
+      "mark": {
+        "type": "trail",
+        "tooltip": true
+      }
     }
   ],
   "config": {}

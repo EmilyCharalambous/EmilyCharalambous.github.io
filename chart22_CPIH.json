@@ -1,19 +1,25 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/CPIH%20Data%20Novemeber%202021-2022.csv"
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Novermber%202020-2022%20CPIH%20Data.csv"
   },
   "title": {
     "text": "Consumer Prices Index including owner occupiers' housing costs (CPIH)",
     "fontSize": 15,
-    "subtitle": "2021-2022 Data, Source: ONS",
+    "subtitle": "2020-2022 Data, Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "anchor": "middle",
     "color": "black"
   },
   "params": [
-    {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+    {
+      "name": "highlight",
+      "select": {
+        "type": "point",
+        "on": "mouseover"
+      }
+    }
   ],
   "height": 300,
   "width": 300,
@@ -21,21 +27,39 @@
   "encoding": {
     "x": {
       "field": "Category",
-      "axis": {"labelAngle": 30, "labelFontSize": 10, "titleFontSize": 13}
+      "axis": {
+        "labelAngle": 30,
+        "labelFontSize": 10,
+        "titleFontSize": 13
+      }
     },
     "y": {
       "field": "CPIH Index",
       "title": "CPIH Index (%)",
       "type": "quantitative",
-      "axis": {"titleFontSize": 13}
+      "axis": {
+        "titleFontSize": 13
+      }
     },
-    "xOffset": {"field": "Year"},
-    "color": {"field": "Year"},
+    "xOffset": {
+      "field": "Year"
+    },
+    "color": {
+      "field": "Year"
+    },
     "fillOpacity": {
-      "condition": {"param": "highlight", "value": 1},
+      "condition": {
+        "param": "highlight",
+        "value": 1
+      },
       "value": 0.6
     },
-    "tooltip": [{"field": "CPIH Index", "title": "CPIH Index (%)"}]
+    "tooltip": [
+      {
+        "field": "CPIH Index",
+        "title": "CPIH Index (%)"
+      }
+    ]
   },
   "config": {}
 }

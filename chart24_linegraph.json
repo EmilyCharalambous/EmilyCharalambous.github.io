@@ -3,67 +3,131 @@
   "title": {
     "text": "House Prices in the UK",
     "fontSize": 15,
-    "subtitle": "2021-2022 Data, Source: ONS",
+    "subtitle": "2020-2022 Data, Source: ONS",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 12,
     "anchor": "middle",
     "color": "black"
   },
   "data": {
-    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/House%20Prices%20UK%202021-2022.csv"
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/House%20Prices%202020%20-%202022%20UK.csv"
   },
   "height": 300,
   "width": 320,
-  "mark": {"type": "line", "point": false},
+  "mark": {
+    "type": "line",
+    "point": false
+  },
   "encoding": {
     "x": {
       "field": "Date",
-      "type": "ordinal",
+      "type": "temporal",
       "title": "Date",
-      "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13}
+      "axis": {
+        "grid": false,
+        "labelFontSize": 12,
+        "titleFontSize": 13
+      }
     },
     "y": {
       "field": "House Prices",
       "type": "quantitative",
-      "scale": {"domain": [125000, 350000]},
+      "scale": {
+        "domain": [
+          125000,
+          350000
+        ]
+      },
       "title": "House Prices (£)",
-      "axis": {"grid": false, "labelFontSize": 12, "titleFontSize": 13}
+      "axis": {
+        "grid": false,
+        "labelFontSize": 12,
+        "titleFontSize": 13
+      }
     },
     "color": {
       "condition": {
         "param": "hover",
         "field": "Country",
         "type": "nominal",
-        "legend": null
+        "legend": {
+          "title": "Country",
+          "orient": "left",
+          "direction": "vertical",
+          "labelAlign": "left"
+        }
       },
       "value": "grey"
     },
-    "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+    "opacity": {
+      "condition": {
+        "param": "hover",
+        "value": 1
+      },
+      "value": 0.2
+    }
   },
   "layer": [
     {
       "params": [
         {
           "name": "hover",
-          "select": {"type": "point", "fields": ["Country"], "on": "mouseover"}
+          "select": {
+            "type": "point",
+            "fields": [
+              "Country"
+            ],
+            "on": "mouseover"
+          }
         }
       ],
-      "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+      "mark": {
+        "type": "line",
+        "strokeWidth": 8,
+        "stroke": "transparent"
+      }
     },
-    {"mark": "line"},
+    {
+      "mark": "line"
+    },
     {
       "encoding": {
-        "x": {"aggregate": "max", "field": "Date"},
-        "y": {"aggregate": {"argmax": "Date"}, "field": "House Prices"}
+        "x": {
+          "aggregate": "max",
+          "field": "Date"
+        },
+        "y": {
+          "aggregate": {
+            "argmax": "Date"
+          },
+          "field": "House Prices"
+        }
       },
       "layer": [
-        {"mark": {"type": "circle"}},
         {
-          "mark": {"type": "text", "align": "left", "dx": 4},
-          "encoding": {"text": {"field": "Country", "type": "nominal"}}
+          "mark": {
+            "type": "circle"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4
+          },
+          "encoding": {
+            "text": {
+              "field": "Country",
+              "type": "nominal"
+            }
+          }
         }
       ]
     }
   ],
-  "config": {"view": {"stroke": null}}
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
 }

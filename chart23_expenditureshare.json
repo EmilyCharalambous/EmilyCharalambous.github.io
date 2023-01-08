@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Renters%20vs%20owner%20occupiers(2).csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "Household Costs Indices, Average Expenditure Share by Tenure Type, UK",
+    "fontSize": 15,
+    "subtitle": ["2021, Source: ONS"],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "Type_of_buyers",
+        "oneOf": ["Owner Occupier", "Private Renter", "Subsidised Renter"]
+      }
+    }
+  ],
+  "mark": {"type": "bar", "size": {"expr": "20"}, "opacity": 1},
+  "background": "ghostwhite",
+  "height": 390,
+  "width": 300,
+  "encoding": {
+    "x": {
+      "field": "Expenditure_Share",
+      "type": "quantitative",
+      "axis": {
+        "title": "Expenditure Share (Parts per 1,000)",
+        "grid": false,
+        "labelAngle": 0
+      }
+    },
+    "color": {
+      "field": "Type_of_buyers",
+      "scale": {"range": ["teal", "skyblue", "seagreen"]},
+      "title": "Type of buyers"
+    },
+    "y": {
+      "field": "Category",
+      "type": "nominal",
+      "axis": {"grid": true, "title": null},
+      "sort": "-x"
+    },
+    "tooltip": {"field": "Expenditure_Share", "type": "quantitative"}
+  },
+  "config": {}
+}
