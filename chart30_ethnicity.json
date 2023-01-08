@@ -1,0 +1,109 @@
+{
+    "data": {
+        "url": "https://raw.githubusercontent.com/EmilyCharalambous/EmilyCharalambous.github.io/main/Ethnicity.csv"
+    },
+    "facet": {
+        "column": {
+            "field": "Category",
+            "title": null
+        }
+    },
+    "title": {
+        "text": "Proportion of Adults Reporting Difficulty Affording Energy, Rent or Mortgage payments",
+        "subtitle": "June - September 2022 Data, Source: ONS",
+        "fontSize": 15,
+        "subtitleFontStyle": "italic",
+        "subtitleFontSize": 11,
+        "anchor": "start"
+    },
+    "transform": [
+        {
+            "filter": {
+                "field": "Range",
+                "oneOf": [
+                    "95% confidence interval - lower",
+                    "95% confidence interval - upper",
+                    "Average"
+                ]
+            }
+        },
+        {
+            "filter": {
+                "field": "Ethnicity",
+                "oneOf": [
+                    "White",
+                    "Mixed or Multiple ethnic groups",
+                    "Asian or Asian British",
+                    "Black or Black British",
+                    "Any other ethnic group",
+                    "Ethnic minority group"
+                ]
+            }
+        }
+    ],
+    "spec": {
+        "mark": "point",
+        "encoding": {
+            "x": {
+                "field": "People",
+                "type": "quantitative",
+                "title": "Porportion (%)"
+            },
+            "y": {
+                "field": "Ethnicity",
+                "type": "ordinal",
+                "title": null
+            },
+            "color": {
+                "value": "navy",
+                "filled": true
+            },
+            "size": {
+                "value": 5
+            },
+            "opacity": {
+                "value": 1
+            }
+        },
+        "layer": [
+            {
+                "mark": {
+                    "type": "trail",
+                    "tooltip": true
+                },
+                "encoding": {
+                    "detail": {
+                        "field": "Ethnicity",
+                        "type": "nominal"
+                    },
+                    "color": {
+                        "value": "red"
+                    },
+                    "size": {
+                        "value": 1
+                    },
+                    "opacity": {
+                        "value": 1
+                    }
+                },
+                "params": [
+                    {
+                        "name": "hover",
+                        "select": {
+                            "type": "point",
+                            "on": "mouseover",
+                            "clear": "mouseout"
+                        }
+                    }
+                ]
+            },
+            {
+                "mark": {
+                    "type": "tick",
+                    "filled": true
+                }
+            }
+        ]
+    },
+    "config": {}
+}
