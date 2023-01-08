@@ -1,37 +1,37 @@
-﻿Range,People,Ethnicity
-Difficult to afford energy,44,White
-95% confidence interval - lower,43,White
-95% confidence interval - upper,45,White
-Difficult to afford rent or mortgage,28,White
-95% confidence interval - lower,26,White
-95% confidence interval - upper,30,White
-Difficult to afford energy,53,Mixed or Multiple ethnic groups
-95% confidence interval - lower,39,Mixed or Multiple ethnic groups
-95% confidence interval - upper,68,Mixed or Multiple ethnic groups
-Difficult to afford rent or mortgage,39,Mixed or Multiple ethnic groups
-95% confidence interval - lower,25,Mixed or Multiple ethnic groups
-95% confidence interval - upper,54,Mixed or Multiple ethnic groups
-Difficult to afford energy,59,Asian or Asian British
-95% confidence interval - lower,52,Asian or Asian British
-95% confidence interval - upper,66,Asian or Asian British
-Difficult to afford rent or mortgage,46,Asian or Asian British
-95% confidence interval - lower,39,Asian or Asian British
-95% confidence interval - upper,54,Asian or Asian British
-Difficult to afford energy,69,Black or Black British
-95% confidence interval - lower,60,Black or Black British
-95% confidence interval - upper,79,Black or Black British
-Difficult to afford rent or mortgage,52,Black or Black British
-95% confidence interval - lower,42,Black or Black British
-95% confidence interval - upper,63,Black or Black British
-Difficult to afford energy,54,Any other ethnic group
-95% confidence interval - lower,39,Any other ethnic group
-95% confidence interval - upper,69,Any other ethnic group
-Difficult to afford rent or mortgage,40,Any other ethnic group
-95% confidence interval - lower,24,Any other ethnic group
-95% confidence interval - upper,56,Any other ethnic group
-Difficult to afford energy,60,Ethnic minority group
-95% confidence interval - lower,55,Ethnic minority group
-95% confidence interval - upper,65,Ethnic minority group
-Difficult to afford rent or mortgage,46,Ethnic minority group
-95% confidence interval - lower,41,Ethnic minority group
-95% confidence interval - upper,51,Ethnic minority group
+﻿Range,People,Ethnicity,Category
+Average,44,White,Difficult to afford energy
+95% confidence interval - lower,43,White,Difficult to afford energy
+95% confidence interval - upper,45,White,Difficult to afford energy
+Average,28,White,Difficult to afford rent or mortgage
+95% confidence interval - lower,26,White,Difficult to afford rent or mortgage
+95% confidence interval - upper,30,White,Difficult to afford rent or mortgage
+Average,53,Mixed or Multiple ethnic groups,Difficult to afford energy
+95% confidence interval - lower,39,Mixed or Multiple ethnic groups,Difficult to afford energy
+95% confidence interval - upper,68,Mixed or Multiple ethnic groups,Difficult to afford energy
+Average,39,Mixed or Multiple ethnic groups,Difficult to afford rent or mortgage
+95% confidence interval - lower,25,Mixed or Multiple ethnic groups,Difficult to afford rent or mortgage
+95% confidence interval - upper,54,Mixed or Multiple ethnic groups,Difficult to afford rent or mortgage
+Average,59,Asian or Asian British,Difficult to afford energy
+95% confidence interval - lower,52,Asian or Asian British,Difficult to afford energy
+95% confidence interval - upper,66,Asian or Asian British,Difficult to afford energy
+Average,46,Asian or Asian British,Difficult to afford rent or mortgage
+95% confidence interval - lower,39,Asian or Asian British,Difficult to afford rent or mortgage
+95% confidence interval - upper,54,Asian or Asian British,Difficult to afford rent or mortgage
+Average,69,Black or Black British,Difficult to afford energy
+95% confidence interval - lower,60,Black or Black British,Difficult to afford energy
+95% confidence interval - upper,79,Black or Black British,Difficult to afford energy
+Average,52,Black or Black British,Difficult to afford rent or mortgage
+95% confidence interval - lower,42,Black or Black British,Difficult to afford rent or mortgage
+95% confidence interval - upper,63,Black or Black British,Difficult to afford rent or mortgage
+Average,54,Any other ethnic group,Difficult to afford energy
+95% confidence interval - lower,39,Any other ethnic group,Difficult to afford energy
+95% confidence interval - upper,69,Any other ethnic group,Difficult to afford energy
+Average,40,Any other ethnic group,Difficult to afford rent or mortgage
+95% confidence interval - lower,24,Any other ethnic group,Difficult to afford rent or mortgage
+95% confidence interval - upper,56,Any other ethnic group,Difficult to afford rent or mortgage
+Average,60,Ethnic minority group,Difficult to afford energy
+95% confidence interval - lower,55,Ethnic minority group,Difficult to afford energy
+95% confidence interval - upper,65,Ethnic minority group,Difficult to afford energy
+Average,46,Ethnic minority group,Difficult to afford rent or mortgage
+95% confidence interval - lower,41,Ethnic minority group,Difficult to afford rent or mortgage
+95% confidence interval - upper,51,Ethnic minority group,Difficult to afford rent or mortgage
