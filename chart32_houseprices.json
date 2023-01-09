@@ -6,7 +6,7 @@
     "title": {
       "text": "House Prices in the UK",
       "fontSize": 15,
-      "subtitle": "2020-2022 Data, Source: ONS",
+      "subtitle": ["2020-2022 Data, Source: ONS","*Year represents starting month: January"],
       "subtitleFontStyle": "italic",
       "subtitleFontSize": 12,
       "anchor": "middle",
