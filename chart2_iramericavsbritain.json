@@ -1,89 +1,119 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-     
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Borrowing costs - Britain vs America",
-    "subtitle": ["Yields, 10y bonds. Source: FRED and BoE", ""],
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
+    "text": "Borrowing costs by Country",
+    "subtitle": [
+      "Yields, 10 year bonds, Source: FRED and Bank of England",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
     "anchor": "start",
     "color": "#000000",
-    "subtitleColor":"#000000"},
-  
-    "config": {
-    "background":"#ffffff",
-    "view": {"stroke": "transparent"}},
-    
-      "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+    "subtitleColor": "#000000"
+  },
+  "config": {
+    "background": "#ffffff",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+  },
+  "transform": [
+    {
+      "calculate": "year(datum.Date)",
+      "as": "year"
     },
-  
-    "transform": [  
-      {"calculate":"year(datum.Date)", "as": "year"},
-    
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"},
-      
-      {"filter": "datum.y1!=0"}
-      ],
-  
-    "params": [    
-      {"name":"minYear", "value":2005,
-         "bind":{
-           "input": "range",
-           "min": 1979, 
-           "max": 2022, 
-           "step": 1,
-           "name": "Start year:"}
+    {
+      "filter": "datum.year>=minYear"
+    },
+    {
+      "filter": "datum.year<=maxYear"
+    },
+    {
+      "filter": "datum.y1!=0"
+    }
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 2005,
+      "bind": {
+        "input": "range",
+        "min": 1979,
+        "max": 2022,
+        "step": 1,
+        "name": "Start year:"
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2022,
+      "bind": {
+        "input": "range",
+        "min": 1979,
+        "max": 2022,
+        "step": 1,
+        "name": "End year:"
+      }
+    }
+  ],
+  "repeat": {
+    "layer": [
+      "us10y",
+      "y10",
+      "german10y"
+    ]
+  },
+  "spec": {
+    "height": 300,
+    "width": 300,
+    "mark": {
+      "type": "line",
+      "strokeWidth": 2
+    },
+    "encoding": {
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#000000"
+        }
       },
-  
-      {"name":"maxYear", "value":2022,
-         "bind":{
-           "input": "range",
-           "min": 1979, 
-           "max": 2022, 
-           "step": 1,
-           "name": "End year:"}}],
-  
-    
-    "repeat": {"layer": ["us10y", "y10", "german10y"]},
-   
-    "spec": {
-        
-        "height": 300,
-        "width": 300,
-  
-        "mark": {
-            "type":"line",
-            "strokeWidth":2},    
-  
-        "encoding": {
-            "x": {
-            "field": "Date",
-            "type": "temporal",
-            "title": null,
-            "axis": {
-            "grid": false,
-            "labelColor":"#000000"}},
-    
-            "y": {
-            "field": {"repeat": "layer"},               
-            "type": "quantitative",
-            "title":null,
-            "axis": {
-                "grid": false,
-                "labelColor":"#000000"}},
-    
-            "color": {
-                "datum": {"repeat": "layer"},
-                "scale": {"range": ["red", "orange", "blue"]},
-                "legend":{
-                  "labelExpr": "{'us10y': 'US', 'y10': 'UK', 'german10y':'Germany'}[datum.label]",
-                  "orient": "top-right",
-                  "labelColor":"#000000",
-                  "title":"Country",
-                  "titleColor":"#000000"}
-                } 
-            }
-          }
+      "y": {
+        "field": {
+          "repeat": "layer"
+        },
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor": "#000000"
+        }
+      },
+      "color": {
+        "datum": {
+          "repeat": "layer"
+        },
+        "scale": {
+          "range": [
+            "red",
+            "orange",
+            "blue"
+          ]
+        },
+        "legend": {
+          "labelExpr": "{'us10y': 'US', 'y10': 'UK', 'german10y':'Germany'}[datum.label]",
+          "orient": "top-right",
+          "labelColor": "#000000",
+          "title": "Country",
+          "titleColor": "#000000"
+        }
+      }
+    }
   }
+}

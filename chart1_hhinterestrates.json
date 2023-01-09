@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
          
     "title": {
-        "text": "UK - household interest rates",
-        "subtitle":["Source: Bank of England. Series: IUMCCTL, IUMTLMV",""],
+        "text": "Household Interest Rates [UK]",
+        "subtitle":["Source: Bank of England"],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
@@ -45,7 +45,6 @@
           "grid":false,
           "gridColor":"aliceblue",
           "gridWidth":0.5,
-          "gridDash":1,
           "labelColor":"#000000"}
           },
     

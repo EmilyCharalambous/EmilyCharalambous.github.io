@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
-    <link rel="stylesheet" href="index4.css">
     <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
@@ -27,24 +27,30 @@
 </head>
 
 <body>
-    <h3>Data Science Project 2022</h3>
-    <h1>Cost of Living: UK Analysis and Effects</h1>
-    <h4>Aim:</h4>
-    <h2>The project aims to examine the impact of the current Cost of Living in the UK on peoples’ Mental Health and
-        highlight the importance of financial comfort and stability as a means of attending a reasonably good quality of
-        life.
-        The Cost of Living is becoming more and more of an important issue in the UK, with prices soaring at significant
-        levels, due to the upwards racing of energy cost, which was primarily induced by the recent Russian-Ukrainian
-        conflict.
-        <h2>Studies have shown that people who are struggling to afford basic necessities such as housing, food, and
-            healthcare are more likely to experience mental health issues such as depression, anxiety, and stress. This
-            can
-            be especially true for those who are already living with mental health conditions, as the added financial
-            pressures can exacerbate their symptoms.</h2>
+
+    <h1>Cost of Living: UK Analysis and Social Effects</h1>
+    <h4>Aim</h4>
+    <h2>The aim of the project is to examine how the change in cost of living across the UK is affecting the population
+        at the social level. When referring to the “social level”, we consider our main KPIs to be: <h2>
+            <h2> 1) Life satisfaction index 2) Happiness index 3) Racial inequalities.</h2>
+            <h2>We will first aim to establish how the cost of living has changed over the years 2020, 2021 and 2022,
+                whilst
+                also examining the real growth rate of earnings (i.e. after adjusting for inflation). We will then be
+                looking at
+                data related to our three main KPIs to establish whether these have changed over the past 3 years.
+                Our initial assumption is that the cost of living is rising, mainly due to the recent pandemic
+                disrupting supply
+                chains, as well as the recent Russian-Ukrainian conflict causing a spike in energy costs. We would
+                therefore
+                expect a negative impact across the above 3 KPIs, given that people who are struggling to afford basic
+                necessities such as housing, food, and healthcare are more likely to experience mental health issues.
+                Additionally, we would expect certain income/racial groups to be disproportionately affected compared to
+                others.</h2>
+        </h2>
         <ul>
             <div class="myWeek1">
                 <ul>
-                    <h3>Figures 1 and 2: Measuring inflation and how it affects owners vs buyers </h3>
+                    <h3>Figures 1 and 2: Consumer Price Index and Expenditure Share of Households </h3>
                     <p> </p>
                     </li>
                     <div class="chart" id="Chart22"></div>
@@ -53,17 +59,17 @@
                     </li>
                     <div class="chart" id="Chart23"></div>
                     </li>
-                    <h3>Figure 3: Housing Market Prices in the UK by Country</h3>
+                    <h3>Figure 3: Housing Market in UK</h3>
                     </li>
-                    <div class="chart" id="Chart24"></div>
+                    <div class="chart" id="Chart32"></div>
                     </li>
-                    <h3>Figure 4: Wage Growth Rate (%)</h3>
-                    
+                    <h3>Figure 4: Real Wage Growth Rate </h3>
+
                     </li>
                     <div class="chart" id="Chart31"></div>
                     </li>
 
-                    <h3>Figures 5-6: Social Effect and Indices </h3>
+                    <h3>Figures 5 and 6: Social Effect and Indices </h3>
                     </li>
                     <div class="chart" id="Chart25"></div>
                     </li>
@@ -72,12 +78,12 @@
                     <div class="chart" id="Chart29"></div>
                     </li>
 
-                    <h3>Figures 7: Recent Survey Question </h3>
+                    <h3>Figures 7: Snapshot of Worry Captured by UK Population </h3>
                     </li>
                     <div class="chart" id="Chart28"></div>
                     </li>
 
-                    <h3>Figures 8: Social Effect and Ethnicity </h3>
+                    <h3>Figures 8: Relationship between Ethnicity and Level of Affordability </h3>
                     </li>
                     <div class="chart" id="Chart30"></div>
                     </li>
@@ -85,25 +91,66 @@
 
 
                     <h4>Data Use and Access </h4>
-                    <h2>For this project, I used publicly available data from the Office for National Statistics (ONS)
-                        website to create the charts shown below. I downloaded the relevant CSV file, cleaned the data,
-                        and then used Vega Lite and Rapid Charts examples as inspiration for creating the charts. For
-                        the maps, I used geojson.io. These tools and resources can be used to replicate my process.
+                    <h2>The data used for the specific project have been obtained from the UK ONS website; this implies
+                        that our data source is both public and reliable. After the relevant csv files were obtained
+                        from the website, they were manually cleaned in excel and imported into Vega Lite for the
+                        purpose of creating visualizations. In terms of the manual cleaning in excel, I would generally
+                        manipulate the original file so that I am left with two columns, the first one outlining the
+                        name of the variable, and the second one outlining the value of the variable.
+                        Various examples found on the “Rapid Charts” website were used as inspiration when creating my
+                        visualizations. The segmented UK map, as seen in Fig. 5 and 6, was created using the geojson.io
+                        tool. It should be noted that, even though automation is not a key feature of my project, all
+                        data sources/tools used are publicly available and the manual cleaning process is straight
+                        forward, so in that sense, the process/results should be very easy to replicate.
+                        All data sources/tools are properly referenced in the “Appendix” section.
+
+                    </h2>
+                    <h4>Challenges faced and tools used</h4>
+                    <h2>No major challenges were faced in relation to data cleaning, as this was manually done in excel
+                        and the manipulation of data was generally a linear process. In terms of the data analysis, the
+                        main challenge I faced revolved around using appropriate visualizations to illustrate my data.
+                        In some instances, a stacked bar chart was the most appropriate visual to use, whereas in other
+                        cases, more complex visuals (i.e. the segmented UK map chart) were a better choice. Often times,
+                        I had to visualize the same dataset using different charts in order to establish which version
+                        is the most easily digestible. Moreover, in certain instances, finding data across different
+                        years was not feasible, thus making comparisons/drawing conclusions more challenging.</h2>
+                    <h4> Conclusion </h4>
+                    <h2>With reference to Fig.1, the CPIH rate increased across all categories between years 2020 –
+                        2022, signifying that the cost of living is increasing at an increasing rate, with house prices
+                        also experiencing a significant increase (Fig.3). This could be forcing a large portion of the
+                        population to rent, with renters spending a staggering 50% of monthly income on rent & utilities
+                        (Fig.2), whilst at the same time experiencing a drop in real earnings (-2.7%) as per Fig. 4.
+                        The above illustrate that consumer spending power is decreasing, which we would associate with a
+                        decrease in the Happiness and Life satisfaction indexes, as well as a major stress factor. Fig.7
+                        illustrates that the rising cost of living represents a significant concern for 76% of the
+                        population, highlighting the scale of the issue. However, looking at Fig 5 & 6, we can see a
+                        general trend in the opposite direction; we believe this driven by the pandemic ending in 2022
+                        and could worsen in the future. Finally, it seems that non-white people/ethnic minorities are
+                        having a harder time paying rent and utility bills compared to their white counterparts (Fig.8);
+                        this could suggest that racial inequality will increase within the coming years.
+
                     </h2>
 
-                    <h4> Conclusion </h4>
-                    <h2>Figures 1 and 2 reveal that prices have not only increased in the housing market, but also in
-                        other essential categories like food, transport, and healthcare, according to the consumer price
-                        index including owner occupiers' housing costs (CPIH). The effects of these price increases are
-                        noticeable among all households, but particularly among those that rent instead of owning their
-                        homes. Figure 3 illustrates that there are regional differences in the UK's housing market, with
-                        house prices being highest in England compared to the rest of the country. Figures 4-7
-                        demonstrate the impact of the rising cost of living on mental health, as indicated by the
-                        Happiness and Life Satisfaction Index. The data suggests that Northern Ireland has the highest
-                        scores on both indices, while Scotland has the lowest. However, when asked about symptoms of
-                        worry, 76% of the sample data indicated that they were "very worried" or "somewhat worried."
-                        Finally, the rising cost of living is a contributing factor to mild or even severe depression.
-                    </h2>
+                    <p> Appendix:
+                    <p>
+                        <a
+                            href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/householdcostsindices/householdcostsindicesukfourthpreliminaryestimates2005to2021">Source
+                            Fig.1-2</a>
+                        <a
+                            href="https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/housepriceindex/october2022">Source
+                            Fig.3</a>
+                        <a
+                            href="https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/averageweeklyearningsingreatbritain/december2022">Source
+                            Fig.4</a>
+                        <a
+                            href="https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/measuringnationalwellbeing/april2021tomarch2022#:~:text=Between%20the%20year%20ending%20March%202021%20and%20year%20ending%20March,6.1%25%20in%20the%20previous%20year)">Source
+                            Fig.5-6</a>
+                        <a
+                            href="https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/datasets/publicopinionsandsocialtrendsgreatbritainpersonalwellbeingandloneliness">Source
+                            Fig.7</a>
+                        <a
+                            href="https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/articles/impactofincreasedcostoflivingonadultsacrossgreatbritain/junetoseptember2022">Source
+                            Fig.8 ONS</a>
                 </ul>
             </div>
 
@@ -115,24 +162,24 @@
                     //Define charts:
                     var myChart22 = "chart22_CPIH.json";
                     var myChart23 = "chart23_expenditureshare.json";
-                    var myChart24 = "chart24_linegraph.json";
                     var myChart25 = "chart25_UKmap.json";
                     var myChart26 = "chart26_earnings.json";
                     var myChart28 = "chart28_donutchart.json";
                     var myChart29 = "chart29.json";
                     var myChart30 = "chart30_ethnicity.json";
                     var myChart31 = "chart31_wages.json";
+                    var myChart32 = "chart32_houseprices.json";
 
                     // Embed charts:
                     vegaEmbed('#Chart22', myChart22);
                     vegaEmbed('#Chart23', myChart23);
-                    vegaEmbed('#Chart24', myChart24);
                     vegaEmbed('#Chart25', myChart25);
                     vegaEmbed('#Chart26', myChart26);
                     vegaEmbed('#Chart28', myChart28);
                     vegaEmbed('#Chart29', myChart29);
                     vegaEmbed('#Chart30', myChart30);
                     vegaEmbed('#Chart31', myChart31);
+                    vegaEmbed('#Chart32', myChart32);
                 </script>
 
 

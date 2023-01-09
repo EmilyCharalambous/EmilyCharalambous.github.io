@@ -8,32 +8,35 @@ body {
 h1 {
 
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 35px;
-    font-weight: 500;
+    font-family: 'Calibri', sans-serif;
+    font-size: 40px;
 }
 
 h2 {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 16px;
     font-weight: 500;
 }
 
 h3 {
     color: azure;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
+    font-size: 25px;
 }
 
 h4 {
     color:white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
+    font-size: 30px;
 }
 
 p {
     color: azure;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
 }
+
+
 
 .chart {
     background-color: white;
@@ -60,7 +63,7 @@ p {
     border-radius: 20px;
     width: 150px;
     margin: 10px 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
     cursor: pointer;
     transition: background-color 1s ease;
     font-size: 20px;
@@ -85,7 +88,7 @@ p {
     border-radius: 20px;
     width: 150px;
     margin: 10px 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
     cursor: pointer;
     transition: background-color 1s ease;
     font-size: 20px;
@@ -111,7 +114,7 @@ p {
     border-radius: 20px;
     width: 150px;
     margin: 10px 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
     cursor: pointer;
     transition: background-color 1s ease;
 }
@@ -122,35 +125,3 @@ p {
 }
 
 
-#text {
-    position: static;
-    top: 20px;
-    right: 100px;
-    bottom: 50px;
-    left: 50px;
-    padding: 20px;
-    overflow-y: hidden;
-    box-sizing: border-box;
-}
-
-#text2 {
-    position: static;
-    top: 80px;
-    right: 50px;
-    bottom: 50px;
-    left: 50px;
-    padding: 20px;
-    overflow-y: hidden;
-    box-sizing: border-box;
-}
-
-#text3 {
-    position: static;
-    top: 80px;
-    right: 50px;
-    bottom: 50px;
-    left: 50px;
-    padding: 20px;
-    overflow-y: hidden;
-    box-sizing: border-box;
-}
